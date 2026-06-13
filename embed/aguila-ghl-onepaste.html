@@ -1,0 +1,1221 @@
+<!-- AGUILA CONSTRUCTION — GoHighLevel ONE-PASTE (CSS+HTML+JS). Blank page ->
+     section padding 0 / full width -> Custom JS/HTML element -> paste all. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+/* ============================================================
+   Aguila Construction LLC — styles
+   Palette sampled from brand mockup
+   ============================================================ */
+:root{
+  --paper:#FBFAF6;
+  --paper-2:#F4EFE4;
+  --card:#FFFFFF;
+  --ink:#161512;
+  --ink-2:#2C2A26;
+  --muted:#6E6A62;
+  --muted-2:#8B867C;
+  --line:#E9E3D6;
+  --line-2:#EFEADF;
+  --gold:#B0863A;
+  --gold-2:#C6A24E;
+  --gold-deep:#8C6B2C;
+  --dark:#161512;
+  --dark-2:#201E1A;
+  --dark-line:#332F28;
+
+  --maxw:1160px;
+  --r-sm:10px;
+  --r:16px;
+  --r-lg:24px;
+  --shadow:0 1px 2px rgba(22,21,18,.04), 0 12px 30px -12px rgba(22,21,18,.12);
+  --shadow-lg:0 30px 60px -24px rgba(22,21,18,.28);
+  --ease:cubic-bezier(.4,0,.2,1);
+  --font-d:"Plus Jakarta Sans", system-ui, sans-serif;
+  --font-b:"Inter", system-ui, sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-b);
+  color:var(--ink-2);
+  background:var(--paper);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:clip;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+h1,h2,h3,h4{font-family:var(--font-d);color:var(--ink);line-height:1.08;letter-spacing:-.02em;margin:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.g{color:var(--gold)}
+.center{text-align:center}
+.arr{display:inline-block;transition:transform .25s var(--ease)}
+
+/* ---------- buttons ---------- */
+.btn{
+  --bg:var(--ink); --fg:#fff;
+  display:inline-flex;align-items:center;gap:.5em;
+  background:var(--bg);color:var(--fg);
+  font-family:var(--font-d);font-weight:600;font-size:.95rem;
+  padding:.72em 1.25em;border-radius:999px;border:1px solid transparent;
+  cursor:pointer;transition:transform .2s var(--ease),background .2s var(--ease),box-shadow .2s var(--ease);
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn-dark{background:var(--ink);color:#fff;box-shadow:0 8px 20px -8px rgba(22,21,18,.5)}
+.btn-dark:hover{background:#000}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink);background:rgba(22,21,18,.03)}
+.btn-lg{font-size:1.02rem;padding:.85em 1.5em}
+.btn-block{width:100%;justify-content:center}
+
+/* ---------- pills ---------- */
+.pill{
+  display:inline-flex;align-items:center;gap:.45em;
+  font-family:var(--font-d);font-weight:600;font-size:.78rem;letter-spacing:.01em;
+  color:var(--ink);background:#fff;border:1px solid var(--line);
+  padding:.4em .85em;border-radius:999px;margin-bottom:18px;
+}
+.pill-tan{background:var(--paper-2);border-color:transparent;color:var(--gold-deep)}
+.pill-dark{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);color:var(--gold-2)}
+.stars-mini{color:var(--gold);font-size:.9em}
+
+/* ---------- section scaffolding ---------- */
+.section{padding:96px 0;position:relative}
+.section h2{font-size:clamp(2rem,4.4vw,3.15rem);font-weight:800}
+.section .pill{margin-bottom:18px}
+.section h2{margin-bottom:10px}
+.section-lead{max-width:660px;color:var(--muted);font-size:1.08rem;margin:6px 0 0}
+.center-lead{margin-left:auto;margin-right:auto}
+.center h2{margin-left:auto;margin-right:auto}
+.section-alt{background:var(--paper-2)}
+.narrow{max-width:820px}
+
+/* scroll offset for sticky header */
+:where(section,#top)[id]{scroll-margin-top:84px}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,250,246,.82);
+  backdrop-filter:saturate(140%) blur(12px);
+  -webkit-backdrop-filter:saturate(140%) blur(12px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);
+}
+.site-header.scrolled{border-bottom-color:var(--line);box-shadow:0 8px 24px -18px rgba(22,21,18,.4)}
+.header-inner{display:flex;align-items:center;gap:24px;height:68px}
+.brand{display:flex;align-items:center}
+.brand img{height:34px;width:auto}
+.nav{display:flex;gap:28px;margin-left:8px}
+.nav a{font-family:var(--font-d);font-weight:500;font-size:.94rem;color:var(--ink-2);position:relative;padding:4px 0}
+.nav a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--gold);transition:width .25s var(--ease)}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{width:100%}
+.header-cta{margin-left:auto;display:flex;align-items:center;gap:16px}
+.phone-link{display:inline-flex;align-items:center;gap:.45em;font-family:var(--font-d);font-weight:600;font-size:.92rem;color:var(--ink)}
+.phone-link .ic{width:16px;height:16px}
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.hamburger{display:none;flex-direction:column;gap:5px;width:42px;height:42px;align-items:center;justify-content:center;background:transparent;border:1px solid var(--line);border-radius:10px;cursor:pointer}
+.hamburger span{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s var(--ease),opacity .2s var(--ease)}
+.hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:64px 0 44px;position:relative}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(900px 500px at 88% -5%, rgba(176,134,58,.10), transparent 60%),
+    radial-gradient(700px 460px at -5% 12%, rgba(176,134,58,.06), transparent 55%);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero-copy h1{font-size:clamp(2.6rem,6vw,4.3rem);font-weight:800;margin:18px 0 18px}
+.hero .lead{font-size:1.18rem;color:var(--muted);max-width:480px;margin:0 0 28px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+.stats{display:flex;gap:38px;flex-wrap:wrap}
+.stat{display:flex;flex-direction:column}
+.stat .num{font-family:var(--font-d);font-weight:800;font-size:1.7rem;color:var(--ink);letter-spacing:-.02em}
+.stat .lbl{font-size:.83rem;color:var(--muted);margin-top:2px}
+
+.hero-media{position:relative;min-height:420px}
+.hero-photo{border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo-main{aspect-ratio:4/5;border:6px solid #fff}
+.hero-photo-inset{
+  position:absolute;right:-14px;bottom:-26px;width:54%;aspect-ratio:4/3;
+  border:6px solid #fff;background:#fff;
+}
+.rated-badge{
+  position:absolute;top:16px;left:16px;
+  display:flex;align-items:center;gap:10px;
+  background:var(--ink);color:#fff;padding:10px 14px;border-radius:14px;
+  font-size:.74rem;line-height:1.25;box-shadow:0 12px 24px -10px rgba(0,0,0,.5)
+}
+.rated-badge .g-mark{color:var(--gold-2);font-size:1.5rem;line-height:1}
+.rated-badge strong{font-family:var(--font-d);font-size:.95rem}
+.rated-badge em{color:var(--muted-2);font-style:normal}
+
+.trust-strip{
+  display:flex;flex-wrap:wrap;gap:14px 38px;justify-content:center;
+  margin-top:64px;padding-top:30px;border-top:1px solid var(--line)
+}
+.trust-strip span{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font-d);font-weight:600;font-size:.9rem;color:var(--ink-2)}
+.trust-strip .ic{width:18px;height:18px;color:var(--gold)}
+
+/* ============================================================
+   PROJECTS / OUR WORK
+   ============================================================ */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:24px;margin-top:36px}
+.project-card{
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-lg);
+  overflow:hidden;box-shadow:var(--shadow);transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.project-img{position:relative;aspect-ratio:4/3;overflow:hidden}
+.project-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.project-card:hover .project-img img{transform:scale(1.05)}
+.tag-pill{
+  position:absolute;top:12px;right:12px;
+  background:rgba(22,21,18,.78);color:#fff;font-family:var(--font-d);font-weight:600;
+  font-size:.72rem;padding:.35em .75em;border-radius:999px;backdrop-filter:blur(4px)
+}
+.project-body{padding:22px 22px 24px}
+.project-body h3{font-size:1.3rem;font-weight:700;margin-bottom:6px}
+.project-body p{color:var(--muted);font-size:.96rem;margin:0 0 14px}
+.link-arrow{
+  background:none;border:none;padding:0;cursor:pointer;
+  font-family:var(--font-d);font-weight:600;font-size:.94rem;color:var(--gold-deep);
+  display:inline-flex;align-items:center;gap:.4em
+}
+.link-arrow:hover .arr{transform:translateX(4px)}
+
+/* before / after slider */
+.ba-feature{
+  display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center;
+  margin-top:40px;background:var(--card);border:1px solid var(--line-2);
+  border-radius:var(--r-lg);padding:18px;box-shadow:var(--shadow)
+}
+.ba-slider{
+  position:relative;aspect-ratio:3/2;border-radius:var(--r);overflow:hidden;
+  user-select:none;touch-action:none;cursor:ew-resize;background:var(--ink)
+}
+.ba-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba-before-wrap{position:absolute;inset:0;width:50%;overflow:hidden;will-change:width}
+.ba-before-wrap img{width:none}
+.ba-before{width:var(--ba-w,100%)}
+.ba-label{
+  position:absolute;bottom:14px;font-family:var(--font-d);font-weight:700;font-size:.72rem;
+  letter-spacing:.06em;text-transform:uppercase;color:#fff;
+  background:rgba(22,21,18,.6);padding:.35em .7em;border-radius:999px;backdrop-filter:blur(3px)
+}
+.ba-label-before{left:14px}
+.ba-label-after{right:14px}
+.ba-handle{
+  position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);
+  display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 1px rgba(0,0,0,.08)
+}
+.ba-handle svg{
+  width:36px;height:36px;background:#fff;border-radius:50%;padding:7px;
+  fill:none;stroke:var(--ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;
+  box-shadow:0 6px 16px -4px rgba(0,0,0,.5)
+}
+.ba-handle:focus-visible{outline:none}
+.ba-handle:focus-visible svg{outline:2px solid var(--gold);outline-offset:3px}
+.ba-caption h3{font-size:1.5rem;font-weight:700;margin-bottom:10px}
+.ba-caption p{color:var(--muted);margin:0}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.service{
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);
+  padding:26px 24px 24px;transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s var(--ease)
+}
+.service:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line)}
+.svc-ic{
+  display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;
+  background:var(--paper-2);border-radius:12px;margin-bottom:16px
+}
+.svc-ic svg{width:24px;height:24px;fill:none;stroke:var(--gold-deep);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.service h3{font-size:1.22rem;font-weight:700;margin-bottom:8px}
+.service p{color:var(--muted);font-size:.95rem;margin:0 0 16px}
+.svc-tag{font-family:var(--font-d);font-weight:700;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep)}
+.services-note{
+  display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;
+  margin-top:30px;padding:26px 30px;background:var(--ink);border-radius:var(--r);
+}
+.services-note p{color:#D9D4CA;margin:0;max-width:680px;font-size:.98rem}
+.services-note strong{color:#fff}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+.about-copy h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:800;margin-bottom:20px}
+.about-copy p{color:var(--muted);margin:0 0 16px;font-size:1.04rem}
+.about-copy strong{color:var(--ink-2)}
+.about-stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:26px;padding-top:26px;border-top:1px solid var(--line)}
+.about-stats .num{font-size:1.5rem}
+.about-stats .lbl{max-width:140px}
+.quote-card{
+  background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:38px 34px;position:relative;overflow:hidden;
+  box-shadow:var(--shadow-lg)
+}
+.quote-card::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(176,134,58,.35),transparent 70%)}
+.quote-mark{width:40px;height:40px;fill:var(--gold-2);stroke:none;margin-bottom:14px;opacity:.95}
+.quote-text{font-family:var(--font-d);font-weight:500;font-size:1.22rem;line-height:1.45;color:#F4F1EB;margin:0 0 24px;position:relative}
+.quote-author{display:flex;align-items:center;gap:12px}
+.avatar{
+  width:42px;height:42px;border-radius:50%;background:var(--gold);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;font-size:.9rem;flex:none
+}
+.quote-author span{font-size:.9rem;color:var(--muted-2)}
+.quote-author strong{color:#fff;font-family:var(--font-d)}
+
+/* ============================================================
+   PROCESS / STEPS
+   ============================================================ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;text-align:left}
+.step{
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:26px 24px;position:relative
+}
+.step-num{
+  display:inline-flex;width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;
+  align-items:center;justify-content:center;font-family:var(--font-d);font-weight:700;margin-bottom:16px
+}
+.step h3{font-size:1.16rem;font-weight:700;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.94rem;margin:0 0 16px}
+.step-tag{font-family:var(--font-d);font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep);background:var(--paper-2);padding:.4em .7em;border-radius:999px}
+
+/* ============================================================
+   WHY (DARK)
+   ============================================================ */
+.section-dark{background:var(--dark);color:#F4F1EB}
+.section-dark h2{color:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;text-align:left}
+.why{padding:26px 22px;border:1px solid var(--dark-line);border-radius:var(--r);background:var(--dark-2)}
+.why-ic{display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;background:rgba(176,134,58,.14);border-radius:12px;margin-bottom:16px}
+.why-ic svg{width:24px;height:24px;fill:none;stroke:var(--gold-2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.why h3{color:#fff;font-size:1.18rem;font-weight:700;margin-bottom:8px}
+.why p{color:#B6B0A4;font-size:.95rem;margin:0}
+
+/* ============================================================
+   REVIEWS
+   ============================================================ */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;text-align:left}
+.review{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:28px 26px;box-shadow:var(--shadow)}
+.review .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.review p{color:var(--ink-2);font-size:.98rem;margin:0 0 22px}
+.review-author{display:flex;align-items:center;gap:12px}
+.review-author span{font-size:.88rem;color:var(--muted)}
+.review-author strong{color:var(--ink);font-family:var(--font-d)}
+.review-author .src{color:var(--gold-deep);font-size:.8rem}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{margin-top:36px}
+.faq-item{
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);
+  margin-bottom:14px;overflow:hidden;transition:border-color .25s var(--ease),box-shadow .25s var(--ease)
+}
+.faq-item[open]{border-color:var(--line);box-shadow:var(--shadow)}
+.faq-item summary{
+  list-style:none;cursor:pointer;padding:22px 24px;
+  font-family:var(--font-d);font-weight:600;font-size:1.08rem;color:var(--ink);
+  display:flex;align-items:center;justify-content:space-between;gap:16px
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-plus{position:relative;width:18px;height:18px;flex:none}
+.faq-plus::before,.faq-plus::after{content:"";position:absolute;background:var(--gold-deep);border-radius:2px;transition:transform .3s var(--ease)}
+.faq-plus::before{top:8px;left:0;width:18px;height:2px}
+.faq-plus::after{left:8px;top:0;width:2px;height:18px}
+.faq-item[open] .faq-plus::after{transform:rotate(90deg);opacity:0}
+.faq-body{padding:0 24px 22px;color:var(--muted)}
+.faq-body p{margin:0}
+.price-list{list-style:none;padding:0;margin:16px 0 4px;text-align:left}
+.price-list li{padding:14px 0;border-bottom:1px solid var(--line-2)}
+.price-list li:first-child{padding-top:4px}
+.price-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.price-name{font-family:var(--font-d);font-weight:700;color:var(--ink);font-size:1rem}
+.price-val{font-family:var(--font-d);font-weight:700;color:var(--gold-deep);font-size:.9rem;white-space:nowrap}
+.price-note{margin:5px 0 0;font-size:.9rem;color:var(--muted)}
+.price-foot{margin-top:16px;font-size:.92rem}
+@media (max-width:520px){
+  .price-val{white-space:normal}
+}
+.faq-foot{text-align:center;margin-top:26px;color:var(--muted)}
+.faq-foot a{font-family:var(--font-d);font-weight:600;color:var(--gold-deep)}
+.faq-foot a:hover .arr{transform:translateX(4px)}
+
+/* ============================================================
+   CTA BAND
+   ============================================================ */
+.cta-band{padding:20px 0 0}
+.cta-inner{
+  position:relative;overflow:hidden;text-align:center;
+  background:linear-gradient(120deg,#A87F33,#B89146 55%,#C6A24E);
+  border-radius:var(--r-lg);padding:74px 24px;color:var(--ink)
+}
+.cta-inner::after{content:"";position:absolute;right:-40px;top:-40px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),transparent 65%)}
+.cta-inner h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:#1c1813;position:relative}
+.cta-inner p{color:#3a2f1f;font-size:1.12rem;margin:14px 0 28px;position:relative}
+.cta-inner .btn{position:relative}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{background:var(--paper);border-top:1px solid var(--line);padding:56px 0 30px;margin-top:20px}
+.footer-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-bottom:30px}
+.footer-brand img{height:38px;width:auto;margin-bottom:8px}
+.footer-tag-sm{font-family:var(--font-d);font-weight:700;font-size:1.2rem;color:var(--ink);margin:0}
+.footer-motto{font-family:var(--font-d);color:var(--muted);text-align:right;margin:0;line-height:1.5}
+.footer-cols{display:grid;grid-template-columns:repeat(3,auto);gap:40px;justify-content:start;padding:30px 0;border-top:1px solid var(--line)}
+.footer-col h4{font-family:var(--font-d);font-weight:700;font-size:.92rem;color:var(--ink);margin:0 0 12px}
+.footer-col a,.footer-col span{display:block;color:var(--muted);font-size:.92rem;margin-bottom:7px}
+.footer-col a:hover{color:var(--gold-deep)}
+.footer-legal{border-top:1px solid var(--line);padding-top:22px;color:var(--muted-2);font-size:.84rem;text-align:center}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed;inset:0;z-index:100;background:rgba(18,17,14,.93);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;animation:lbIn .25s var(--ease) forwards
+}
+.lightbox[hidden]{display:none}
+@keyframes lbIn{to{opacity:1}}
+.lb-stage{margin:0;max-width:90vw;max-height:86vh;display:flex;flex-direction:column;align-items:center;gap:14px}
+.lb-stage img{max-width:90vw;max-height:78vh;border-radius:var(--r);box-shadow:var(--shadow-lg);object-fit:contain}
+.lb-ba{width:min(880px,90vw);max-height:78vh;aspect-ratio:3/2;box-shadow:var(--shadow-lg)}
+.lb-ba img{border-radius:0;box-shadow:none}
+.lb-stage figcaption{color:#E6E1D6;font-family:var(--font-d);font-weight:600;font-size:.95rem}
+.lb-close{position:absolute;top:20px;right:24px;background:none;border:none;color:#fff;font-size:2.4rem;line-height:1;cursor:pointer;opacity:.8}
+.lb-close:hover{opacity:1}
+.lb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.12);
+  border:none;color:#fff;font-size:2rem;line-height:1;cursor:pointer;transition:background .2s
+}
+.lb-nav:hover{background:rgba(255,255,255,.24)}
+.lb-prev{left:20px}
+.lb-next{right:20px}
+
+/* ============================================================
+   QUOTE MODAL (GoHighLevel form)
+   ============================================================ */
+.quote-modal{
+  position:fixed;inset:0;z-index:110;background:rgba(18,17,14,.78);
+  display:flex;align-items:flex-start;justify-content:center;
+  padding:5vh 18px;overflow-y:auto;
+  opacity:0;animation:lbIn .25s var(--ease) forwards;
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)
+}
+.quote-modal[hidden]{display:none}
+.qm-dialog{
+  position:relative;width:100%;max-width:480px;margin:auto;
+  background:#fff;border-radius:16px;overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  animation:qmRise .3s var(--ease) both
+}
+@keyframes qmRise{from{transform:translateY(16px);opacity:.6}to{transform:none;opacity:1}}
+.qm-dialog iframe{display:block;width:100%;border:none}
+.qm-head{display:flex;align-items:center;gap:14px;background:var(--ink);padding:18px 22px}
+.qm-head img{height:30px;width:auto;flex:none}
+.qm-head p{margin:0;color:#fff;font-family:var(--font-d);font-weight:700;font-size:1.05rem;line-height:1.2}
+.qm-head p .g{color:var(--gold-2)}
+.qm-head small{display:block;color:#B6B0A4;font-weight:500;font-size:.78rem;margin-top:3px}
+.qm-close{
+  position:fixed;top:16px;right:20px;z-index:120;
+  width:42px;height:42px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,.95);color:var(--ink);font-size:1.7rem;line-height:1;
+  box-shadow:0 6px 18px -6px rgba(0,0,0,.5);transition:background .2s,transform .2s
+}
+.qm-close:hover{background:#fff;transform:scale(1.05)}
+@media (max-width:520px){
+  .quote-modal{padding:0}
+  .qm-dialog{max-width:none;min-height:100%;border-radius:0}
+  .qm-close{top:10px;right:12px}
+}
+
+/* ============================================================
+   REVEAL ANIMATION
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-media{max-width:520px;margin:0 auto;width:100%}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .ba-feature{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .nav,.header-cta .phone-link,.header-cta .btn{display:none}
+  .hamburger{display:flex}
+  .header-cta{margin-left:auto}
+  /* mobile nav panel */
+  .nav.open{
+    display:flex;position:fixed;top:68px;left:0;right:0;
+    flex-direction:column;gap:0;background:var(--paper);
+    border-bottom:1px solid var(--line);padding:8px 24px 18px;
+    box-shadow:0 24px 40px -20px rgba(22,21,18,.4);z-index:49
+  }
+  .nav.open a{padding:14px 0;border-bottom:1px solid var(--line-2);font-size:1.05rem}
+  .nav.open a::after{display:none}
+  .section{padding:72px 0}
+  .projects,.reviews-grid{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column}
+  .footer-motto{text-align:left}
+}
+@media (max-width:520px){
+  .wrap{padding:0 18px}
+  .services-grid,.steps,.why-grid{grid-template-columns:1fr}
+  .stats{gap:24px}
+  .footer-cols{grid-template-columns:1fr 1fr;gap:24px}
+  .hero-photo-inset{width:58%;right:-6px;bottom:-16px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Aguila Construction LLC",
+  "image": "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg",
+  "telephone": "+1-224-497-3566",
+  "areaServed": "Elgin, IL and the Fox Valley area",
+  "address": { "@type": "PostalAddress", "addressLocality": "Elgin", "addressRegion": "IL", "postalCode": "60120", "addressCountry": "US" },
+  "priceRange": "$$",
+  "slogan": "Building the future, one project at a time."
+}
+</script>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Aguila Construction — home">
+      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="170" height="36" />
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#gallery">Our Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a class="phone-link" href="tel:+12244973566">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/></svg>
+        224-497-3566
+      </a>
+      <a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Free Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="pill"><span class="stars-mini">★</span> 5-Star Rated · Elgin, IL</span>
+      <h1>Your home,<br>done <span class="g">right.</span></h1>
+      <p class="lead">Remodeling, painting, and renovations for Elgin homeowners. Clean crews, honest pricing, and craftsmanship you can see.</p>
+      <div class="hero-actions">
+        <a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get a Free Quote <span class="arr">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="tel:+12244973566">Call 224-497-3566</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="num">100+</span><span class="lbl">Rooms Painted</span></div>
+        <div class="stat"><span class="num">$1M</span><span class="lbl">Insured</span></div>
+        <div class="stat"><span class="num">1–3 days</span><span class="lbl">Avg. Turnaround</span></div>
+      </div>
+    </div>
+
+    <div class="hero-media reveal">
+      <div class="hero-photo hero-photo-main">
+        <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg" alt="Finished bathroom remodel with a tiled walk-in shower and glass doors" loading="eager" />
+        <div class="rated-badge">
+          <span class="g-mark">★</span>
+          <span><strong>5.0</strong> Google Rating<br><em>Verified reviews</em></span>
+        </div>
+      </div>
+      <div class="hero-photo hero-photo-inset">
+        <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/kitchen-after-2.jpg" alt="Freshly remodeled kitchen with white cabinets and stainless appliances" loading="eager" />
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap trust-strip reveal">
+    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg> Licensed &amp; Insured</span>
+    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 9v-1a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v1"/></svg> Family Owned</span>
+    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5"/></svg> Sherwin-Williams Pro</span>
+    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Free Estimates</span>
+  </div>
+</section>
+
+<!-- ============ OUR WORK / PROJECTS ============ -->
+<section class="section" id="gallery">
+  <div class="wrap">
+    <span class="pill pill-tan reveal">Our Work</span>
+    <h2 class="reveal">Real projects. <span class="g">Real transformations.</span></h2>
+
+    <!-- Project cards are generated from the GALLERY list in script.js -->
+    <div class="projects reveal" id="projects"></div>
+
+    <!-- Interactive before/after slider -->
+    <div class="ba-feature reveal">
+      <div class="ba-slider" id="baSlider">
+        <img class="ba-after" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-after.jpg" alt="Bathroom after remodel" loading="lazy" />
+        <div class="ba-before-wrap">
+          <img class="ba-before" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-before.jpg" alt="Bathroom before remodel" loading="lazy" />
+        </div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
+        <div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7 4 12l5 5M15 7l5 5-5 5"/></svg>
+        </div>
+      </div>
+      <div class="ba-caption">
+        <h3>Tub-to-shower remodel</h3>
+        <p>A gutted, water-damaged tub surround rebuilt into a clean tiled shower with new glass doors — start to finish by one Aguila crew. <strong>Drag the handle</strong> to see the difference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section-alt" id="services">
+  <div class="wrap">
+    <span class="pill pill-tan reveal">What We Do</span>
+    <h2 class="reveal">One crew for the <span class="g">whole project.</span></h2>
+    <p class="section-lead reveal">From a single room to a full remodel, Aguila handles it start to finish — no juggling three different contractors, no finger-pointing when something goes wrong. Here's where homeowners call us most.</p>
+
+    <div class="services-grid reveal">
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 9v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9M8 6h0M8 13v4"/></svg>
+        </span>
+        <h3>Kitchen Remodeling</h3>
+        <p>The room buyers judge first and you live in every day. We handle cabinets, counters, tile, and paint as one job — so the finishes actually match and the timeline stays tight.</p>
+        <span class="svc-tag">Most-requested remodel</span>
+      </article>
+
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12V6a2 2 0 0 1 2-2 2 2 0 0 1 2 2M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM6 19l-1 2M18 19l1 2"/></svg>
+        </span>
+        <h3>Bathroom Remodeling</h3>
+        <p>Tub-to-shower conversions, new tile, vanities, and fixtures. Small space, zero margin for sloppy work — which is exactly why you want the right crew in there.</p>
+        <span class="svc-tag">Done in days, not weeks</span>
+      </article>
+
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l9-7 9 7v11M3 21h18M9 21v-6h6v6"/></svg>
+        </span>
+        <h3>Basement Finishing</h3>
+        <p>That unused square footage downstairs is the cheapest room you'll ever add. Framing, drywall, flooring, lighting — we turn cold concrete into a real living space.</p>
+        <span class="svc-tag">Add usable square footage</span>
+      </article>
+
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 10h16M10 4v6M14 10v10"/></svg>
+        </span>
+        <h3>Drywall &amp; Framing</h3>
+        <p>Cracks, holes, water damage, or a wall that needs to move. We patch seamlessly and frame straight — the kind of work you only notice when it's done wrong.</p>
+        <span class="svc-tag">Seamless, invisible fixes</span>
+      </article>
+
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h12V4H4zM16 5h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-7v3M10 14h2v6h-2z"/></svg>
+        </span>
+        <h3>Interior Painting</h3>
+        <p>Clean lines, full coverage, and prep that actually lasts. We move and protect your furniture, cut sharp edges by hand, and clean up like we were never there.</p>
+        <span class="svc-tag">We know paint</span>
+      </article>
+
+      <article class="service">
+        <span class="svc-ic">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3zM3 9h18M9 3v18M9 15h6"/></svg>
+        </span>
+        <h3>Flooring, Tile &amp; Trim</h3>
+        <p>Vinyl plank, tile, baseboards, doors, and trim carpentry. The detail work that makes a room feel finished instead of almost-done — mitered corners, clean reveals, no gaps.</p>
+        <span class="svc-tag">The finishing details</span>
+      </article>
+    </div>
+
+    <div class="services-note reveal">
+      <p><strong>Not seeing your project? Just ask.</strong> We also handle demolition, door &amp; fixture installation, garage epoxy, and coordinate licensed plumbing &amp; electrical through our trusted trade partners — so your whole job runs through one point of contact.</p>
+      <a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get a Free Quote <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <span class="pill pill-tan">Who We Are</span>
+      <h2>Built on craftsmanship,<br><span class="g">backed by experience.</span></h2>
+      <p>Aguila Construction is owned and run by <strong>John Paul Aguila</strong>, born and raised right here in the Elgin area. He started Aguila for one reason: to help local homeowners turn the house they have into the one they actually want.</p>
+      <p>While Aguila is a young company, the people swinging the hammers aren't. John Paul's crew is made up of <strong>licensed trade professionals with 25+ years of hands-on experience</strong> — so whether it's framing, tile, drywall, or finish work, the right expert is on your job, doing it cleanly and doing it right.</p>
+      <p>No revolving door of subcontractors. No cut corners. Just high-quality work, done fast and done honestly.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="num">25+</span><span class="lbl">Years of trade experience</span></div>
+        <div class="stat"><span class="num">Licensed</span><span class="lbl">Professionals on every job</span></div>
+        <div class="stat"><span class="num">Elgin</span><span class="lbl">Local &amp; family operated</span></div>
+      </div>
+    </div>
+    <aside class="quote-card reveal">
+      <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1zm10 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1z"/></svg>
+      <p class="quote-text">I started Aguila because every family deserves to love where they live. We show up, we work clean, and we treat your home like it's our own.</p>
+      <div class="quote-author">
+        <span class="avatar">JP</span>
+        <span><strong>John Paul Aguila</strong><br>Owner, Aguila Construction</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section section-alt" id="process">
+  <div class="wrap center">
+    <span class="pill pill-tan reveal">How It Works</span>
+    <h2 class="reveal">From first call to <span class="g">finished job.</span></h2>
+    <p class="section-lead center-lead reveal">No chasing, no waiting around for weeks. Here's exactly what happens after you reach out.</p>
+
+    <div class="steps reveal">
+      <div class="step">
+        <span class="step-num">1</span>
+        <h3>Reach Out</h3>
+        <p>Fill out the quick quote form or call us. Tell us a little about the project you have in mind.</p>
+        <span class="step-tag">Takes 60 seconds</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <h3>We Call You Back</h3>
+        <p>Expect a text or call within the hour. We'll talk through your project, scope, and goals in detail.</p>
+        <span class="step-tag">Within 1 hour</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <h3>Free Estimate</h3>
+        <p>We schedule your free, written estimate — no obligation, no surprise fees later.</p>
+        <span class="step-tag">Within 24 hours</span>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <h3>We Get to Work</h3>
+        <p>Our crew shows up on time and gets it done professionally. You don't even need to be home.</p>
+        <span class="step-tag">Clean &amp; on schedule</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY AGUILA (DARK) ============ -->
+<section class="section section-dark" id="why">
+  <div class="wrap center">
+    <span class="pill pill-dark reveal">Why Aguila</span>
+    <h2 class="reveal">Homeowners <span class="g">trust us</span> for a reason.</h2>
+    <div class="why-grid reveal">
+      <div class="why">
+        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5 12 12M14 4l6 6-2 2-6-6zM10 14l-6 6M4 20l3-1 1-3"/></svg></span>
+        <h3>Clean Crew</h3>
+        <p>We treat your home like our own — no mess left behind.</p>
+      </div>
+      <div class="why">
+        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l3 3v17l-2-1-2 1-2-1-2 1-2-1-2 1V2zM9 7h6M9 11h6M9 15h4"/></svg></span>
+        <h3>Upfront Pricing</h3>
+        <p>No surprises. A detailed written estimate, every time.</p>
+      </div>
+      <div class="why">
+        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
+        <h3>Fast Turnaround</h3>
+        <p>Most interior jobs done in 1–3 days.</p>
+      </div>
+      <div class="why">
+        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg></span>
+        <h3>Fully Insured</h3>
+        <p>$1M liability coverage for total peace of mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" id="reviews">
+  <div class="wrap center">
+    <span class="pill pill-tan reveal"><span class="stars-mini">★</span> 5-Star Reviews</span>
+    <h2 class="reveal">Don't take <span class="g">our word for it.</span></h2>
+    <div class="reviews-grid reveal">
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>John and crew are hardworking and diligent. John is true to his word — the project started on time and the crew showed up every day, finishing quicker than I expected. The quote was spot on, no additional charges. I'm thrilled with my new finished basement. Highly recommend Aguila!</p>
+        <div class="review-author"><span class="avatar">NP</span><span><strong>Net Piper</strong><br><span class="src">★ Google Review</span></span></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>Aguila did an excellent job for us. John was professional, honest, and easy to work with from start to finish. Solid workmanship, clear communication, and the project stayed organized throughout. It's hard to find contractors who are dependable and take pride in the work — this team did. Would definitely hire again.</p>
+        <div class="review-author"><span class="avatar">BJ</span><span><strong>Ben Johnson</strong><br><span class="src">★ Google Review</span></span></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>John and crew did a fantastic job communicating with us on the scope of work — trustworthy and reliable. The work looks great, and we'd hire again for sure!</p>
+        <div class="review-author"><span class="avatar">JM</span><span><strong>Jen Murphy</strong><br><span class="src">★ Google Review</span></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-alt" id="faq">
+  <div class="wrap narrow center">
+    <span class="pill pill-tan reveal">Good to Know</span>
+    <h2 class="reveal">Questions, <span class="g">answered.</span></h2>
+  </div>
+  <div class="wrap narrow faq reveal">
+    <details class="faq-item">
+      <summary>What areas do you serve?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>We're based in Elgin, IL and work throughout Chicagoland — the city of Chicago and the surrounding suburbs. Not sure if you're in our range? Just give us a call and we'll let you know.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Are estimates really free?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>Yes — 100% free, with no obligation. We'll visit your home, talk through your project, and send a detailed written estimate. No pressure and no surprise fees later.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How much do projects cost?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body">
+        <p>Every project is priced individually after we see the space, but here are honest ballpark ranges to help set expectations:</p>
+        <ul class="price-list">
+          <li>
+            <div class="price-head"><span class="price-name">Kitchen Remodeling</span><span class="price-val">$15,000–$75,000+</span></div>
+            <p class="price-note">Small refreshes on the low end; full gut remodels with layout changes push past $75k.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Bathroom Remodeling</span><span class="price-val">$12,000–$45,000+</span></div>
+            <p class="price-note">A basic same-layout remodel starts around $12k. Tile showers, custom glass, and plumbing moves run $20k–$45k+.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Basement Finishing</span><span class="price-val">$35,000–$150,000+</span></div>
+            <p class="price-note">An open basic finish starts around $35k. Add a bathroom, wet bar, or bedroom buildout and you're in the $95k–$160k+ range.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Drywall &amp; Framing</span><span class="price-val">$500 / $4,500+</span></div>
+            <p class="price-note">Patch repairs start at $500. Full room framing, hang &amp; finish starts at $4,500.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Interior Painting</span><span class="price-val">$650/room · $3–$7.50/sq ft</span></div>
+            <p class="price-note">Single-room minimum is $650. Whole-interior projects run $3–$7.50/sq ft depending on ceilings, trim, and prep.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Flooring</span><span class="price-val">$1,500+ · $8–$15/sq ft</span></div>
+            <p class="price-note">LVP/laminate with materials and install. Subfloor issues, stairs, and transitions add cost.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Tile Installation</span><span class="price-val">$1,500 backsplash · $14–$30/sq ft · $10,000+ showers</span></div>
+            <p class="price-note">Full tile showers — done with proper waterproofing — are the bigger investment.</p>
+          </li>
+          <li>
+            <div class="price-head"><span class="price-name">Trim &amp; Doors</span><span class="price-val">$1,500+ · $9–$16/linear ft</span></div>
+            <p class="price-note">Priced with material. Best bundled with other work rather than a small standalone run.</p>
+          </li>
+        </ul>
+        <p class="price-foot">Final pricing depends on measurements, existing conditions, and material selections for each job. Your written estimate is fully itemized — these ranges just help set expectations up front.</p>
+      </div>
+    </details>
+    <details class="faq-item">
+      <summary>Do you offer a warranty or guarantee?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>Yes — both. Every job comes with a workmanship warranty (6 months standard; the term varies by job and can be custom-tailored to your project), plus a 100% customer-satisfaction guarantee. We're also licensed and insured with $1M in liability coverage, so if something isn't right, we make it right.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How soon can you start?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>We're usually booked about two weeks out. Smaller jobs — like drywall patching, painting a room, or small plumbing work — can typically get started within two weeks. Larger remodels are scheduled a bit further ahead, so reach out early to claim your spot on the calendar.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Do I need to be home during the work?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>No. Many of our clients give us access and go about their day. Our crews are licensed, insured, and respectful of your home — we protect your space, keep it clean, and lock up when we leave.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>What payment methods do you accept?<span class="faq-plus" aria-hidden="true"></span></summary>
+      <div class="faq-body"><p>We accept cash, cashier's check, Zelle, and credit card. For larger remodels, we'll set up a simple milestone payment schedule so it's clear and predictable.</p></div>
+    </details>
+    <p class="faq-foot">Still have a question? <a href="tel:+12244973566">Give us a call <span class="arr">→</span></a></p>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA + CONTACT ============ -->
+<section class="cta-band" id="quote">
+  <div class="wrap">
+    <div class="cta-inner">
+      <h2>Let's build something amazing.</h2>
+      <p>Get your fast, free written estimate today — no pressure, no obligation.</p>
+      <a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get Your Free Quote <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="180" height="38" />
+      <p class="footer-tag-sm">Aguila<span class="g">.</span></p>
+    </div>
+    <p class="footer-motto">Building the future,<br>one project at a time.</p>
+  </div>
+  <div class="wrap footer-cols">
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+12244973566">224-497-3566</a>
+      <span>Elgin, IL 60120</span>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Painting</a>
+      <a href="#services">Kitchens</a>
+      <a href="#services">Bathrooms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#about">About Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a class="js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Free Quote</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <span>© <span id="year">2025</span> Aguila Construction L.L.C. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close gallery">×</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <figure class="lb-stage">
+    <div id="lbStage"></div>
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+
+<!-- Free Quote popup (GoHighLevel / LeadConnector form) -->
+<div class="quote-modal" id="quoteModal" hidden>
+  <button class="qm-close" id="qmClose" aria-label="Close form">×</button>
+  <div class="qm-dialog" role="dialog" aria-modal="true" aria-label="Request a free quote">
+    <div class="qm-head">
+      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo-light.png" alt="Aguila Construction" />
+      <p>Request your <span class="g">free quote</span><small>Fast, written estimate — no pressure, no obligation.</small></p>
+    </div>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec"
+      id="inline-dO854gO373nh0asaKRec"
+      data-layout="{'id':'INLINE'}"
+      data-form-id="dO854gO373nh0asaKRec"
+      data-form-name="Free Quote Form"
+      title="Free Quote Form"
+      style="display:block;width:100%;min-height:560px;border:none;border-radius:14px;background:#fff">
+    </iframe>
+  </div>
+</div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+<script>
+/* ============================================================
+   Aguila Construction — site interactivity
+   ============================================================ */
+(function () {
+  "use strict";
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  /* ---------- sticky header shadow ---------- */
+  var header = $(".site-header");
+  var onScroll = function () {
+    header.classList.toggle("scrolled", window.scrollY > 8);
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* ---------- mobile nav ---------- */
+  var burger = $("#hamburger");
+  var nav = $("#nav");
+  burger.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  $$("#nav a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      nav.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  /* ---------- FAQ: single-open accordion ---------- */
+  var faqItems = $$(".faq-item");
+  faqItems.forEach(function (item) {
+    item.addEventListener("toggle", function () {
+      if (item.open) {
+        faqItems.forEach(function (other) {
+          if (other !== item) other.open = false;
+        });
+      }
+    });
+  });
+
+  /* ---------- reveal on scroll ---------- */
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    $$(".reveal").forEach(function (el) { io.observe(el); });
+  } else {
+    $$(".reveal").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ============================================================
+     JOBS GALLERY  —  EDIT THIS LIST TO ADD WORK
+     ------------------------------------------------------------
+     IMG_BASE = where the photos live (just the folder).
+     Each category has: label, blurb, cover (the card photo), photos[].
+     A photo is one of:
+        { src: "file.jpg", cap: "Caption" }                          // single photo
+        { before: "x-before.jpg", after: "x-after.jpg", cap: "..." } // before/after slider
+     To add a job: upload the photo(s), then add a line to the right
+     category's photos[]. To add a whole new category, copy a block.
+     ============================================================ */
+  var IMG_BASE = "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/";
+  var imgURL = function (file) {
+    return /^(https?:|data:|\/)/.test(file) ? file : IMG_BASE + file;
+  };
+
+  var GALLERY = [
+    {
+      id: "bathrooms",
+      label: "Bathrooms",
+      blurb: "Tub-to-shower conversions, fresh tile, vanities, and full bath remodels — done right.",
+      cover: "bath-after.jpg",
+      photos: [
+        { before: "bath-before.jpg", after: "bath-after.jpg", cap: "Tub-to-shower remodel — Elgin, IL" },
+        { src: "bathroom-after.jpg", cap: "Tiled walk-in shower with new glass doors" },
+        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile floor" }
+      ]
+    },
+    {
+      id: "basements",
+      label: "Basements",
+      blurb: "Cold concrete turned into a warm, finished living space your family will actually use.",
+      cover: "basement-after.jpg",
+      photos: [
+        { src: "basement-after.jpg", cap: "Finished basement — bright, warm living space" },
+        { src: "basement-before-4.jpg", cap: "Before — bare drywall & concrete" },
+        { src: "basement-before-1.jpg", cap: "Framing & rough-in stage" },
+        { src: "basement-before-2.jpg", cap: "Fresh framing and drywall" },
+        { src: "basement-before-3.jpg", cap: "Basement stairs — mid-renovation" }
+      ]
+    },
+    {
+      id: "kitchens",
+      label: "Kitchens",
+      blurb: "The heart of the home — cabinets, counters, paint, and tile, all handled by one crew.",
+      cover: "kitchen-after-1.jpg",
+      photos: [
+        { src: "kitchen-after-1.jpg", cap: "Freshly finished white cabinets" },
+        { src: "kitchen-after-2.jpg", cap: "Cabinets, counters & new appliances" },
+        { before: "kitchen-before.jpg", after: "kitchen-after-2.jpg", cap: "Kitchen refresh — Elgin, IL" }
+      ]
+    },
+    {
+      id: "finishes",
+      label: "Painting, Flooring & Tile",
+      blurb: "Interior painting, flooring, tile, trim, and drywall — the finish work that makes a whole project feel done.",
+      cover: "bath-floor-after.jpg",
+      photos: [
+        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile flooring — Elgin, IL" },
+        { src: "plumbing.jpg", cap: "Rough-in plumbing, coordinated through our licensed trade partners" }
+        /* Add painting / flooring / trim / drywall photos here as you collect them:
+           { before: "paint-job1-before.jpg", after: "paint-job1-after.jpg", cap: "Living room repaint — Elgin" }, */
+      ]
+    }
+  ];
+
+  /* ---------- reusable before/after slider ---------- */
+  var makeBASlider = function (root) {
+    var wrap = $(".ba-before-wrap", root);
+    var beforeImg = $(".ba-before", root);
+    var handle = $(".ba-handle", root);
+    if (!wrap || !beforeImg || !handle) return;
+    var pct = 50;
+    var sizeBefore = function () { beforeImg.style.width = root.clientWidth + "px"; };
+    var setPct = function (p) {
+      pct = Math.max(0, Math.min(100, p));
+      wrap.style.width = pct + "%";
+      handle.style.left = pct + "%";
+      handle.setAttribute("aria-valuenow", Math.round(pct));
+    };
+    sizeBefore();
+    setPct(50);
+    window.addEventListener("resize", sizeBefore);
+    var fromEvent = function (e) {
+      var rect = root.getBoundingClientRect();
+      var x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+      setPct((x / rect.width) * 100);
+    };
+    var dragging = false;
+    root.addEventListener("pointerdown", function (e) { dragging = true; fromEvent(e); e.preventDefault(); });
+    window.addEventListener("pointermove", function (e) { if (dragging) fromEvent(e); }, { passive: true });
+    window.addEventListener("pointerup", function () { dragging = false; });
+    handle.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { setPct(pct - 4); e.preventDefault(); }
+      if (e.key === "ArrowRight") { setPct(pct + 4); e.preventDefault(); }
+    });
+  };
+
+  // featured slider already in the page markup
+  var pageBA = $("#baSlider");
+  if (pageBA) makeBASlider(pageBA);
+
+  var baMarkup = function (beforeSrc, afterSrc) {
+    return '<div class="ba-slider lb-ba">' +
+      '<img class="ba-after" src="' + afterSrc + '" alt="After">' +
+      '<div class="ba-before-wrap"><img class="ba-before" src="' + beforeSrc + '" alt="Before"></div>' +
+      '<span class="ba-label ba-label-before">Before</span>' +
+      '<span class="ba-label ba-label-after">After</span>' +
+      '<div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">' +
+      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7 4 12l5 5M15 7l5 5-5 5"/></svg></div></div>';
+  };
+
+  /* ---------- lightbox ---------- */
+  var lb = $("#lightbox");
+  var lbStage = $("#lbStage");
+  var lbCap = $("#lbCap");
+  var photos = [];
+  var idx = 0;
+
+  var renderLb = function () {
+    var p = photos[idx];
+    if (p.before && p.after) {
+      lbStage.innerHTML = baMarkup(imgURL(p.before), imgURL(p.after));
+      makeBASlider($(".lb-ba", lbStage));
+    } else {
+      lbStage.innerHTML = '<img id="lbImg" src="' + imgURL(p.src) + '" alt="' + (p.cap || "") + '">';
+    }
+    lbCap.textContent = p.cap || "";
+  };
+  var openLb = function (catIndex) {
+    var cat = GALLERY[catIndex];
+    photos = cat ? cat.photos : [];
+    if (!photos.length) return;
+    idx = 0;
+    lb.hidden = false;
+    document.body.style.overflow = "hidden";
+    renderLb();
+  };
+  var closeLb = function () {
+    lb.hidden = true;
+    document.body.style.overflow = "";
+    lbStage.innerHTML = "";
+  };
+  var step = function (d) { idx = (idx + d + photos.length) % photos.length; renderLb(); };
+
+  $("#lbClose").addEventListener("click", function (e) { e.stopPropagation(); closeLb(); });
+  $("#lbPrev").addEventListener("click", function (e) { e.stopPropagation(); step(-1); });
+  $("#lbNext").addEventListener("click", function (e) { e.stopPropagation(); step(1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+  window.addEventListener("keydown", function (e) {
+    if (lb.hidden) return;
+    if (e.key === "Escape") closeLb();
+    if (e.key === "ArrowLeft") step(-1);
+    if (e.key === "ArrowRight") step(1);
+  });
+
+  /* ---------- build project cards from GALLERY ---------- */
+  var projectsEl = $("#projects");
+  if (projectsEl) {
+    GALLERY.forEach(function (cat, i) {
+      var card = document.createElement("article");
+      card.className = "project-card";
+      card.style.cursor = "pointer";
+      card.innerHTML =
+        '<div class="project-img"><img src="' + imgURL(cat.cover) + '" alt="' + cat.label + ' remodel by Aguila Construction" loading="lazy">' +
+        '<span class="tag-pill">' + cat.photos.length + ' photos</span></div>' +
+        '<div class="project-body"><h3>' + cat.label + '</h3><p>' + cat.blurb + '</p>' +
+        '<button class="link-arrow" type="button">View Gallery <span class="arr">&rarr;</span></button></div>';
+      card.addEventListener("click", function () { openLb(i); });
+      projectsEl.appendChild(card);
+    });
+  }
+
+  /* ---------- free quote modal (GoHighLevel form) ---------- */
+  var quoteModal = $("#quoteModal");
+  if (quoteModal) {
+    var openQuote = function () {
+      quoteModal.hidden = false;
+      document.body.style.overflow = "hidden";
+    };
+    var closeQuote = function () {
+      quoteModal.hidden = true;
+      document.body.style.overflow = "";
+    };
+    $$(".js-quote").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        openQuote();
+      });
+    });
+    $("#qmClose").addEventListener("click", closeQuote);
+    quoteModal.addEventListener("click", function (e) {
+      if (e.target === quoteModal) closeQuote();
+    });
+    window.addEventListener("keydown", function (e) {
+      if (!quoteModal.hidden && e.key === "Escape") closeQuote();
+    });
+  }
+
+  /* ---------- footer year ---------- */
+  var yr = $("#year");
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+</script>
