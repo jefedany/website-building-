@@ -1,721 +1,743 @@
-<!-- AGUILA CONSTRUCTION — paste into a GHL Custom JS/HTML (Custom Code) element.
-     Pair with the CSS block in Page Settings -> Custom CSS.
-     Images load from your public repo via jsDelivr:
-       https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/
-     To add gallery jobs, edit the GALLERY list in the <script> below. -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "Aguila Construction LLC",
-  "image": "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg",
-  "telephone": "+1-224-497-3566",
-  "areaServed": "Elgin, IL and the Fox Valley area",
-  "address": { "@type": "PostalAddress", "addressLocality": "Elgin", "addressRegion": "IL", "postalCode": "60120", "addressCountry": "US" },
-  "priceRange": "$$",
-  "slogan": "Building the future, one project at a time."
-}
-</script>
-
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="brand" href="#top" aria-label="Aguila Construction — home">
-      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="170" height="36" />
-    </a>
-    <nav class="nav" id="nav">
-      <a href="#gallery">Our Work</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <div class="header-cta">
-      <a class="phone-link" href="tel:+12244973566">
-        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/></svg>
-        224-497-3566
-      </a>
-      <a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Free Quote</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main>
-
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy reveal">
-      <span class="pill"><span class="stars-mini">★</span> 5-Star Rated · Elgin, IL</span>
-      <h1>Your home,<br>done <span class="g">right.</span></h1>
-      <p class="lead">Remodeling, painting, and renovations for Elgin homeowners. Clean crews, honest pricing, and craftsmanship you can see.</p>
-      <div class="hero-actions">
-        <a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get a Free Quote <span class="arr">→</span></a>
-        <a class="btn btn-ghost btn-lg" href="tel:+12244973566">Call 224-497-3566</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><span class="num">100+</span><span class="lbl">Rooms Painted</span></div>
-        <div class="stat"><span class="num">$1M</span><span class="lbl">Insured</span></div>
-        <div class="stat"><span class="num">1–3 days</span><span class="lbl">Avg. Turnaround</span></div>
-      </div>
-    </div>
-
-    <div class="hero-media reveal">
-      <div class="hero-photo hero-photo-main">
-        <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg" alt="Finished bathroom remodel with a tiled walk-in shower and glass doors" loading="eager" />
-        <div class="rated-badge">
-          <span class="g-mark">★</span>
-          <span><strong>5.0</strong> Google Rating<br><em>Verified reviews</em></span>
-        </div>
-      </div>
-      <div class="hero-photo hero-photo-inset">
-        <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/kitchen-after-2.jpg" alt="Freshly remodeled kitchen with white cabinets and stainless appliances" loading="eager" />
-      </div>
-    </div>
-  </div>
-
-  <div class="wrap trust-strip reveal">
-    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg> Licensed &amp; Insured</span>
-    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 9v-1a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v1"/></svg> Family Owned</span>
-    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5"/></svg> Sherwin-Williams Pro</span>
-    <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Free Estimates</span>
-  </div>
-</section>
-
-<!-- ============ OUR WORK / PROJECTS ============ -->
-<section class="section" id="gallery">
-  <div class="wrap">
-    <span class="pill pill-tan reveal">Our Work</span>
-    <h2 class="reveal">Real projects. <span class="g">Real transformations.</span></h2>
-
-    <!-- Project cards are generated from the GALLERY list in script.js -->
-    <div class="projects reveal" id="projects"></div>
-
-    <!-- Interactive before/after slider -->
-    <div class="ba-feature reveal">
-      <div class="ba-slider" id="baSlider">
-        <img class="ba-after" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-after.jpg" alt="Bathroom after remodel" loading="lazy" />
-        <div class="ba-before-wrap">
-          <img class="ba-before" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-before.jpg" alt="Bathroom before remodel" loading="lazy" />
-        </div>
-        <span class="ba-label ba-label-before">Before</span>
-        <span class="ba-label ba-label-after">After</span>
-        <div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7 4 12l5 5M15 7l5 5-5 5"/></svg>
-        </div>
-      </div>
-      <div class="ba-caption">
-        <h3>Tub-to-shower remodel</h3>
-        <p>A gutted, water-damaged tub surround rebuilt into a clean tiled shower with new glass doors — start to finish by one Aguila crew. <strong>Drag the handle</strong> to see the difference.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SERVICES ============ -->
-<section class="section section-alt" id="services">
-  <div class="wrap">
-    <span class="pill pill-tan reveal">What We Do</span>
-    <h2 class="reveal">One crew for the <span class="g">whole project.</span></h2>
-    <p class="section-lead reveal">From a single room to a full remodel, Aguila handles it start to finish — no juggling three different contractors, no finger-pointing when something goes wrong. Here's where homeowners call us most.</p>
-
-    <div class="services-grid reveal">
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 9v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9M8 6h0M8 13v4"/></svg>
-        </span>
-        <h3>Kitchen Remodeling</h3>
-        <p>The room buyers judge first and you live in every day. We handle cabinets, counters, tile, and paint as one job — so the finishes actually match and the timeline stays tight.</p>
-        <span class="svc-tag">Most-requested remodel</span>
-      </article>
-
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12V6a2 2 0 0 1 2-2 2 2 0 0 1 2 2M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM6 19l-1 2M18 19l1 2"/></svg>
-        </span>
-        <h3>Bathroom Remodeling</h3>
-        <p>Tub-to-shower conversions, new tile, vanities, and fixtures. Small space, zero margin for sloppy work — which is exactly why you want the right crew in there.</p>
-        <span class="svc-tag">Done in days, not weeks</span>
-      </article>
-
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l9-7 9 7v11M3 21h18M9 21v-6h6v6"/></svg>
-        </span>
-        <h3>Basement Finishing</h3>
-        <p>That unused square footage downstairs is the cheapest room you'll ever add. Framing, drywall, flooring, lighting — we turn cold concrete into a real living space.</p>
-        <span class="svc-tag">Add usable square footage</span>
-      </article>
-
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 10h16M10 4v6M14 10v10"/></svg>
-        </span>
-        <h3>Drywall &amp; Framing</h3>
-        <p>Cracks, holes, water damage, or a wall that needs to move. We patch seamlessly and frame straight — the kind of work you only notice when it's done wrong.</p>
-        <span class="svc-tag">Seamless, invisible fixes</span>
-      </article>
-
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h12V4H4zM16 5h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-7v3M10 14h2v6h-2z"/></svg>
-        </span>
-        <h3>Interior Painting</h3>
-        <p>Clean lines, full coverage, and prep that actually lasts. We move and protect your furniture, cut sharp edges by hand, and clean up like we were never there.</p>
-        <span class="svc-tag">We know paint</span>
-      </article>
-
-      <article class="service">
-        <span class="svc-ic">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3zM3 9h18M9 3v18M9 15h6"/></svg>
-        </span>
-        <h3>Flooring, Tile &amp; Trim</h3>
-        <p>Vinyl plank, tile, baseboards, doors, and trim carpentry. The detail work that makes a room feel finished instead of almost-done — mitered corners, clean reveals, no gaps.</p>
-        <span class="svc-tag">The finishing details</span>
-      </article>
-    </div>
-
-    <div class="services-note reveal">
-      <p><strong>Not seeing your project? Just ask.</strong> We also handle demolition, door &amp; fixture installation, garage epoxy, and coordinate licensed plumbing &amp; electrical through our trusted trade partners — so your whole job runs through one point of contact.</p>
-      <a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get a Free Quote <span class="arr">→</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="section" id="about">
-  <div class="wrap about-grid">
-    <div class="about-copy reveal">
-      <span class="pill pill-tan">Who We Are</span>
-      <h2>Built on craftsmanship,<br><span class="g">backed by experience.</span></h2>
-      <p>Aguila Construction is owned and run by <strong>John Paul Aguila</strong>, born and raised right here in the Elgin area. He started Aguila for one reason: to help local homeowners turn the house they have into the one they actually want.</p>
-      <p>While Aguila is a young company, the people swinging the hammers aren't. John Paul's crew is made up of <strong>licensed trade professionals with 25+ years of hands-on experience</strong> — so whether it's framing, tile, drywall, or finish work, the right expert is on your job, doing it cleanly and doing it right.</p>
-      <p>No revolving door of subcontractors. No cut corners. Just high-quality work, done fast and done honestly.</p>
-      <div class="about-stats">
-        <div class="stat"><span class="num">25+</span><span class="lbl">Years of trade experience</span></div>
-        <div class="stat"><span class="num">Licensed</span><span class="lbl">Professionals on every job</span></div>
-        <div class="stat"><span class="num">Elgin</span><span class="lbl">Local &amp; family operated</span></div>
-      </div>
-    </div>
-    <aside class="quote-card reveal">
-      <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1zm10 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1z"/></svg>
-      <p class="quote-text">I started Aguila because every family deserves to love where they live. We show up, we work clean, and we treat your home like it's our own.</p>
-      <div class="quote-author">
-        <span class="avatar">JP</span>
-        <span><strong>John Paul Aguila</strong><br>Owner, Aguila Construction</span>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<!-- ============ PROCESS ============ -->
-<section class="section section-alt" id="process">
-  <div class="wrap center">
-    <span class="pill pill-tan reveal">How It Works</span>
-    <h2 class="reveal">From first call to <span class="g">finished job.</span></h2>
-    <p class="section-lead center-lead reveal">No chasing, no waiting around for weeks. Here's exactly what happens after you reach out.</p>
-
-    <div class="steps reveal">
-      <div class="step">
-        <span class="step-num">1</span>
-        <h3>Reach Out</h3>
-        <p>Fill out the quick quote form or call us. Tell us a little about the project you have in mind.</p>
-        <span class="step-tag">Takes 60 seconds</span>
-      </div>
-      <div class="step">
-        <span class="step-num">2</span>
-        <h3>We Call You Back</h3>
-        <p>Expect a text or call within the hour. We'll talk through your project, scope, and goals in detail.</p>
-        <span class="step-tag">Within 1 hour</span>
-      </div>
-      <div class="step">
-        <span class="step-num">3</span>
-        <h3>Free Estimate</h3>
-        <p>We schedule your free, written estimate — no obligation, no surprise fees later.</p>
-        <span class="step-tag">Within 24 hours</span>
-      </div>
-      <div class="step">
-        <span class="step-num">4</span>
-        <h3>We Get to Work</h3>
-        <p>Our crew shows up on time and gets it done professionally. You don't even need to be home.</p>
-        <span class="step-tag">Clean &amp; on schedule</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY AGUILA (DARK) ============ -->
-<section class="section section-dark" id="why">
-  <div class="wrap center">
-    <span class="pill pill-dark reveal">Why Aguila</span>
-    <h2 class="reveal">Homeowners <span class="g">trust us</span> for a reason.</h2>
-    <div class="why-grid reveal">
-      <div class="why">
-        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 5 12 12M14 4l6 6-2 2-6-6zM10 14l-6 6M4 20l3-1 1-3"/></svg></span>
-        <h3>Clean Crew</h3>
-        <p>We treat your home like our own — no mess left behind.</p>
-      </div>
-      <div class="why">
-        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l3 3v17l-2-1-2 1-2-1-2 1-2-1-2 1V2zM9 7h6M9 11h6M9 15h4"/></svg></span>
-        <h3>Upfront Pricing</h3>
-        <p>No surprises. A detailed written estimate, every time.</p>
-      </div>
-      <div class="why">
-        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></span>
-        <h3>Fast Turnaround</h3>
-        <p>Most interior jobs done in 1–3 days.</p>
-      </div>
-      <div class="why">
-        <span class="why-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg></span>
-        <h3>Fully Insured</h3>
-        <p>$1M liability coverage for total peace of mind.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ REVIEWS ============ -->
-<section class="section" id="reviews">
-  <div class="wrap center">
-    <span class="pill pill-tan reveal"><span class="stars-mini">★</span> 5-Star Reviews</span>
-    <h2 class="reveal">Don't take <span class="g">our word for it.</span></h2>
-    <div class="reviews-grid reveal">
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>John and crew are hardworking and diligent. John is true to his word — the project started on time and the crew showed up every day, finishing quicker than I expected. The quote was spot on, no additional charges. I'm thrilled with my new finished basement. Highly recommend Aguila!</p>
-        <div class="review-author"><span class="avatar">NP</span><span><strong>Net Piper</strong><br><span class="src">★ Google Review</span></span></div>
-      </article>
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>Aguila did an excellent job for us. John was professional, honest, and easy to work with from start to finish. Solid workmanship, clear communication, and the project stayed organized throughout. It's hard to find contractors who are dependable and take pride in the work — this team did. Would definitely hire again.</p>
-        <div class="review-author"><span class="avatar">BJ</span><span><strong>Ben Johnson</strong><br><span class="src">★ Google Review</span></span></div>
-      </article>
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>John and crew did a fantastic job communicating with us on the scope of work — trustworthy and reliable. The work looks great, and we'd hire again for sure!</p>
-        <div class="review-author"><span class="avatar">JM</span><span><strong>Jen Murphy</strong><br><span class="src">★ Google Review</span></span></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section class="section section-alt" id="faq">
-  <div class="wrap narrow center">
-    <span class="pill pill-tan reveal">Good to Know</span>
-    <h2 class="reveal">Questions, <span class="g">answered.</span></h2>
-  </div>
-  <div class="wrap narrow faq reveal">
-    <details class="faq-item">
-      <summary>What areas do you serve?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We're based in Elgin, IL and work throughout Chicagoland — the city of Chicago and the surrounding suburbs. Not sure if you're in our range? Just give us a call and we'll let you know.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>Are estimates really free?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>Yes — 100% free, with no obligation. We'll visit your home, talk through your project, and send a detailed written estimate. No pressure and no surprise fees later.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>How much do projects cost?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body">
-        <p>Every project is priced individually after we see the space, but here are honest ballpark ranges to help set expectations:</p>
-        <ul class="price-list">
-          <li>
-            <div class="price-head"><span class="price-name">Kitchen Remodeling</span><span class="price-val">$15,000–$75,000+</span></div>
-            <p class="price-note">Small refreshes on the low end; full gut remodels with layout changes push past $75k.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Bathroom Remodeling</span><span class="price-val">$12,000–$45,000+</span></div>
-            <p class="price-note">A basic same-layout remodel starts around $12k. Tile showers, custom glass, and plumbing moves run $20k–$45k+.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Basement Finishing</span><span class="price-val">$35,000–$150,000+</span></div>
-            <p class="price-note">An open basic finish starts around $35k. Add a bathroom, wet bar, or bedroom buildout and you're in the $95k–$160k+ range.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Drywall &amp; Framing</span><span class="price-val">$500 / $4,500+</span></div>
-            <p class="price-note">Patch repairs start at $500. Full room framing, hang &amp; finish starts at $4,500.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Interior Painting</span><span class="price-val">$650/room · $3–$7.50/sq ft</span></div>
-            <p class="price-note">Single-room minimum is $650. Whole-interior projects run $3–$7.50/sq ft depending on ceilings, trim, and prep.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Flooring</span><span class="price-val">$1,500+ · $8–$15/sq ft</span></div>
-            <p class="price-note">LVP/laminate with materials and install. Subfloor issues, stairs, and transitions add cost.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Tile Installation</span><span class="price-val">$1,500 backsplash · $14–$30/sq ft · $10,000+ showers</span></div>
-            <p class="price-note">Full tile showers — done with proper waterproofing — are the bigger investment.</p>
-          </li>
-          <li>
-            <div class="price-head"><span class="price-name">Trim &amp; Doors</span><span class="price-val">$1,500+ · $9–$16/linear ft</span></div>
-            <p class="price-note">Priced with material. Best bundled with other work rather than a small standalone run.</p>
-          </li>
-        </ul>
-        <p class="price-foot">Final pricing depends on measurements, existing conditions, and material selections for each job. Your written estimate is fully itemized — these ranges just help set expectations up front.</p>
-      </div>
-    </details>
-    <details class="faq-item">
-      <summary>Do you offer a warranty or guarantee?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>Yes — both. Every job comes with a workmanship warranty (6 months standard; the term varies by job and can be custom-tailored to your project), plus a 100% customer-satisfaction guarantee. We're also licensed and insured with $1M in liability coverage, so if something isn't right, we make it right.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>How soon can you start?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We're usually booked about two weeks out. Smaller jobs — like drywall patching, painting a room, or small plumbing work — can typically get started within two weeks. Larger remodels are scheduled a bit further ahead, so reach out early to claim your spot on the calendar.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>Do I need to be home during the work?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>No. Many of our clients give us access and go about their day. Our crews are licensed, insured, and respectful of your home — we protect your space, keep it clean, and lock up when we leave.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>What payment methods do you accept?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We accept cash, cashier's check, Zelle, and credit card. For larger remodels, we'll set up a simple milestone payment schedule so it's clear and predictable.</p></div>
-    </details>
-    <p class="faq-foot">Still have a question? <a href="tel:+12244973566">Give us a call <span class="arr">→</span></a></p>
-  </div>
-</section>
-
-<!-- ============ FINAL CTA + CONTACT ============ -->
-<section class="cta-band" id="quote">
-  <div class="wrap">
-    <div class="cta-inner">
-      <h2>Let's build something amazing.</h2>
-      <p>Get your fast, free written estimate today — no pressure, no obligation.</p>
-      <a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Get Your Free Quote <span class="arr">→</span></a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="180" height="38" />
-      <p class="footer-tag-sm">Aguila<span class="g">.</span></p>
-    </div>
-    <p class="footer-motto">Building the future,<br>one project at a time.</p>
-  </div>
-  <div class="wrap footer-cols">
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="tel:+12244973566">224-497-3566</a>
-      <span>Elgin, IL 60120</span>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <a href="#services">Painting</a>
-      <a href="#services">Kitchens</a>
-      <a href="#services">Bathrooms</a>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <a href="#about">About Us</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-      <a class="js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener">Free Quote</a>
-    </div>
-  </div>
-  <div class="wrap footer-legal">
-    <span>© <span id="year">2025</span> Aguila Construction L.L.C. All rights reserved.</span>
-  </div>
-</footer>
-
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" hidden>
-  <button class="lb-close" id="lbClose" aria-label="Close gallery">×</button>
-  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
-  <figure class="lb-stage">
-    <div id="lbStage"></div>
-    <figcaption id="lbCap"></figcaption>
-  </figure>
-  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
-</div>
-
-<!-- Free Quote popup (GoHighLevel / LeadConnector form) -->
-<div class="quote-modal" id="quoteModal" hidden>
-  <button class="qm-close" id="qmClose" aria-label="Close form">×</button>
-  <div class="qm-dialog" role="dialog" aria-modal="true" aria-label="Request a free quote">
-    <div class="qm-head">
-      <img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo-light.png" alt="Aguila Construction" />
-      <p>Request your <span class="g">free quote</span><small>Fast, written estimate — no pressure, no obligation.</small></p>
-    </div>
-    <iframe
-      src="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec"
-      id="inline-dO854gO373nh0asaKRec"
-      data-layout="{'id':'INLINE'}"
-      data-form-id="dO854gO373nh0asaKRec"
-      data-form-name="Free Quote Form"
-      title="Free Quote Form"
-      style="display:block;width:100%;min-height:560px;border:none;border-radius:14px;background:#fff">
-    </iframe>
-  </div>
-</div>
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
-
-<script>
-/* ============================================================
-   Aguila Construction — site interactivity
-   ============================================================ */
-(function () {
-  "use strict";
-
-  var $ = function (s, c) { return (c || document).querySelector(s); };
-  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
-
-  /* ---------- sticky header shadow ---------- */
-  var header = $(".site-header");
-  var onScroll = function () {
-    header.classList.toggle("scrolled", window.scrollY > 8);
-  };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
-
-  /* ---------- mobile nav ---------- */
-  var burger = $("#hamburger");
-  var nav = $("#nav");
-  burger.addEventListener("click", function () {
-    var open = nav.classList.toggle("open");
-    burger.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-  $$("#nav a").forEach(function (a) {
-    a.addEventListener("click", function () {
-      nav.classList.remove("open");
-      burger.setAttribute("aria-expanded", "false");
-    });
-  });
-
-  /* ---------- FAQ: single-open accordion ---------- */
-  var faqItems = $$(".faq-item");
-  faqItems.forEach(function (item) {
-    item.addEventListener("toggle", function () {
-      if (item.open) {
-        faqItems.forEach(function (other) {
-          if (other !== item) other.open = false;
-        });
-      }
-    });
-  });
-
-  /* ---------- reveal on scroll ---------- */
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    $$(".reveal").forEach(function (el) { io.observe(el); });
-  } else {
-    $$(".reveal").forEach(function (el) { el.classList.add("in"); });
-  }
-
-  /* ============================================================
-     JOBS GALLERY  —  EDIT THIS LIST TO ADD WORK
-     ------------------------------------------------------------
-     IMG_BASE = where the photos live (just the folder).
-     Each category has: label, blurb, cover (the card photo), photos[].
-     A photo is one of:
-        { src: "file.jpg", cap: "Caption" }                          // single photo
-        { before: "x-before.jpg", after: "x-after.jpg", cap: "..." } // before/after slider
-     To add a job: upload the photo(s), then add a line to the right
-     category's photos[]. To add a whole new category, copy a block.
-     ============================================================ */
-  var IMG_BASE = "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/";
-  var imgURL = function (file) {
-    return /^(https?:|data:|\/)/.test(file) ? file : IMG_BASE + file;
-  };
-
-  var GALLERY = [
-    {
-      id: "bathrooms",
-      label: "Bathrooms",
-      blurb: "Tub-to-shower conversions, fresh tile, vanities, and full bath remodels — done right.",
-      cover: "bath-after.jpg",
-      photos: [
-        { before: "bath-before.jpg", after: "bath-after.jpg", cap: "Tub-to-shower remodel — Elgin, IL" },
-        { src: "bathroom-after.jpg", cap: "Tiled walk-in shower with new glass doors" },
-        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile floor" }
-      ]
-    },
-    {
-      id: "basements",
-      label: "Basements",
-      blurb: "Cold concrete turned into a warm, finished living space your family will actually use.",
-      cover: "basement-after.jpg",
-      photos: [
-        { src: "basement-after.jpg", cap: "Finished basement — bright, warm living space" },
-        { src: "basement-before-4.jpg", cap: "Before — bare drywall & concrete" },
-        { src: "basement-before-1.jpg", cap: "Framing & rough-in stage" },
-        { src: "basement-before-2.jpg", cap: "Fresh framing and drywall" },
-        { src: "basement-before-3.jpg", cap: "Basement stairs — mid-renovation" }
-      ]
-    },
-    {
-      id: "kitchens",
-      label: "Kitchens",
-      blurb: "The heart of the home — cabinets, counters, paint, and tile, all handled by one crew.",
-      cover: "kitchen-after-1.jpg",
-      photos: [
-        { src: "kitchen-after-1.jpg", cap: "Freshly finished white cabinets" },
-        { src: "kitchen-after-2.jpg", cap: "Cabinets, counters & new appliances" },
-        { before: "kitchen-before.jpg", after: "kitchen-after-2.jpg", cap: "Kitchen refresh — Elgin, IL" }
-      ]
-    },
-    {
-      id: "finishes",
-      label: "Painting, Flooring & Tile",
-      blurb: "Interior painting, flooring, tile, trim, and drywall — the finish work that makes a whole project feel done.",
-      cover: "bath-floor-after.jpg",
-      photos: [
-        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile flooring — Elgin, IL" },
-        { src: "plumbing.jpg", cap: "Rough-in plumbing, coordinated through our licensed trade partners" }
-        /* Add painting / flooring / trim / drywall photos here as you collect them:
-           { before: "paint-job1-before.jpg", after: "paint-job1-after.jpg", cap: "Living room repaint — Elgin" }, */
-      ]
-    }
-  ];
-
-  /* ---------- reusable before/after slider ---------- */
-  var makeBASlider = function (root) {
-    var wrap = $(".ba-before-wrap", root);
-    var beforeImg = $(".ba-before", root);
-    var handle = $(".ba-handle", root);
-    if (!wrap || !beforeImg || !handle) return;
-    var pct = 50;
-    var sizeBefore = function () { beforeImg.style.width = root.clientWidth + "px"; };
-    var setPct = function (p) {
-      pct = Math.max(0, Math.min(100, p));
-      wrap.style.width = pct + "%";
-      handle.style.left = pct + "%";
-      handle.setAttribute("aria-valuenow", Math.round(pct));
-    };
-    sizeBefore();
-    setPct(50);
-    window.addEventListener("resize", sizeBefore);
-    var fromEvent = function (e) {
-      var rect = root.getBoundingClientRect();
-      var x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
-      setPct((x / rect.width) * 100);
-    };
-    var dragging = false;
-    root.addEventListener("pointerdown", function (e) { dragging = true; fromEvent(e); e.preventDefault(); });
-    window.addEventListener("pointermove", function (e) { if (dragging) fromEvent(e); }, { passive: true });
-    window.addEventListener("pointerup", function () { dragging = false; });
-    handle.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowLeft") { setPct(pct - 4); e.preventDefault(); }
-      if (e.key === "ArrowRight") { setPct(pct + 4); e.preventDefault(); }
-    });
-  };
-
-  // featured slider already in the page markup
-  var pageBA = $("#baSlider");
-  if (pageBA) makeBASlider(pageBA);
-
-  var baMarkup = function (beforeSrc, afterSrc) {
-    return '<div class="ba-slider lb-ba">' +
-      '<img class="ba-after" src="' + afterSrc + '" alt="After">' +
-      '<div class="ba-before-wrap"><img class="ba-before" src="' + beforeSrc + '" alt="Before"></div>' +
-      '<span class="ba-label ba-label-before">Before</span>' +
-      '<span class="ba-label ba-label-after">After</span>' +
-      '<div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">' +
-      '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7 4 12l5 5M15 7l5 5-5 5"/></svg></div></div>';
-  };
-
-  /* ---------- lightbox ---------- */
-  var lb = $("#lightbox");
-  var lbStage = $("#lbStage");
-  var lbCap = $("#lbCap");
-  var photos = [];
-  var idx = 0;
-
-  var renderLb = function () {
-    var p = photos[idx];
-    if (p.before && p.after) {
-      lbStage.innerHTML = baMarkup(imgURL(p.before), imgURL(p.after));
-      makeBASlider($(".lb-ba", lbStage));
-    } else {
-      lbStage.innerHTML = '<img id="lbImg" src="' + imgURL(p.src) + '" alt="' + (p.cap || "") + '">';
-    }
-    lbCap.textContent = p.cap || "";
-  };
-  var openLb = function (catIndex) {
-    var cat = GALLERY[catIndex];
-    photos = cat ? cat.photos : [];
-    if (!photos.length) return;
-    idx = 0;
-    lb.hidden = false;
-    document.body.style.overflow = "hidden";
-    renderLb();
-  };
-  var closeLb = function () {
-    lb.hidden = true;
-    document.body.style.overflow = "";
-    lbStage.innerHTML = "";
-  };
-  var step = function (d) { idx = (idx + d + photos.length) % photos.length; renderLb(); };
-
-  $("#lbClose").addEventListener("click", function (e) { e.stopPropagation(); closeLb(); });
-  $("#lbPrev").addEventListener("click", function (e) { e.stopPropagation(); step(-1); });
-  $("#lbNext").addEventListener("click", function (e) { e.stopPropagation(); step(1); });
-  lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
-  window.addEventListener("keydown", function (e) {
-    if (lb.hidden) return;
-    if (e.key === "Escape") closeLb();
-    if (e.key === "ArrowLeft") step(-1);
-    if (e.key === "ArrowRight") step(1);
-  });
-
-  /* ---------- build project cards from GALLERY ---------- */
-  var projectsEl = $("#projects");
-  if (projectsEl) {
-    GALLERY.forEach(function (cat, i) {
-      var card = document.createElement("article");
-      card.className = "project-card";
-      card.style.cursor = "pointer";
-      card.innerHTML =
-        '<div class="project-img"><img src="' + imgURL(cat.cover) + '" alt="' + cat.label + ' remodel by Aguila Construction" loading="lazy">' +
-        '<span class="tag-pill">' + cat.photos.length + ' photos</span></div>' +
-        '<div class="project-body"><h3>' + cat.label + '</h3><p>' + cat.blurb + '</p>' +
-        '<button class="link-arrow" type="button">View Gallery <span class="arr">&rarr;</span></button></div>';
-      card.addEventListener("click", function () { openLb(i); });
-      projectsEl.appendChild(card);
-    });
-  }
-
-  /* ---------- free quote modal (GoHighLevel form) ---------- */
-  var quoteModal = $("#quoteModal");
-  if (quoteModal) {
-    var openQuote = function () {
-      quoteModal.hidden = false;
-      document.body.style.overflow = "hidden";
-    };
-    var closeQuote = function () {
-      quoteModal.hidden = true;
-      document.body.style.overflow = "";
-    };
-    $$(".js-quote").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        openQuote();
-      });
-    });
-    $("#qmClose").addEventListener("click", closeQuote);
-    quoteModal.addEventListener("click", function (e) {
-      if (e.target === quoteModal) closeQuote();
-    });
-    window.addEventListener("keydown", function (e) {
-      if (!quoteModal.hidden && e.key === "Escape") closeQuote();
-    });
-  }
-
-  /* ---------- footer year ---------- */
-  var yr = $("#year");
-  if (yr) yr.textContent = new Date().getFullYear();
-})();
-
-</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- AGUILA CONSTRUCTION — paste into a GHL Custom JS/HTML (Custom Code) element.</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>Pair with the CSS block in Page Settings -&gt; Custom CSS.</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>Images load from your public repo via jsDelivr:</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">       </span>https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>To add gallery jobs, edit the GALLERY list in the &lt;script&gt; below. --&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;script type="application/ld+json"&gt;</span></p>
+<p class="p2"><span class="s1">{</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"@context": "https://schema.org",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"@type": "GeneralContractor",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"name": "Aguila Construction LLC",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"image": "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"telephone": "+1-224-497-3566",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"areaServed": "Elgin, IL and the Fox Valley area",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"address": { "@type": "PostalAddress", "addressLocality": "Elgin", "addressRegion": "IL", "postalCode": "60120", "addressCountry": "US" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"priceRange": "$$",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"slogan": "Building the future, one project at a time."</span></p>
+<p class="p2"><span class="s1">}</span></p>
+<p class="p2"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ HEADER ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;header class="site-header" id="top"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap header-inner"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a class="brand" href="#top" aria-label="Aguila Construction — home"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="170" height="36" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="nav" id="nav"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#gallery"&gt;Our Work&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#services"&gt;Services&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#about"&gt;About&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#reviews"&gt;Reviews&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#faq"&gt;FAQ&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header-cta"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="phone-link" href="tel:+12244973566"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;svg class="ic" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.24 1z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>224-497-3566</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener"&gt;Free Quote&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;main&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ HERO ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="hero"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap hero-grid"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="hero-copy reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="pill"&gt;&lt;span class="stars-mini"&gt;★&lt;/span&gt; 5-Star Rated · Elgin, IL&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h1&gt;Your home,&lt;br&gt;done &lt;span class="g"&gt;right.&lt;/span&gt;&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="lead"&gt;Remodeling, painting, and renovations for Elgin homeowners. Clean crews, honest pricing, and craftsmanship you can see.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-actions"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener"&gt;Get a Free Quote &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a class="btn btn-ghost btn-lg" href="tel:+12244973566"&gt;Call 224-497-3566&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="stats"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;100+&lt;/span&gt;&lt;span class="lbl"&gt;Rooms Painted&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;$1M&lt;/span&gt;&lt;span class="lbl"&gt;Insured&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;1–3 days&lt;/span&gt;&lt;span class="lbl"&gt;Avg. Turnaround&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="hero-media reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-photo hero-photo-main"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bathroom-after.jpg" alt="Finished bathroom remodel with a tiled walk-in shower and glass doors" loading="eager" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="rated-badge"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span class="g-mark"&gt;★&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;span&gt;&lt;strong&gt;5.0&lt;/strong&gt; Google Rating&lt;br&gt;&lt;em&gt;Verified reviews&lt;/em&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="hero-photo hero-photo-inset"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/kitchen-after-2.jpg" alt="Freshly remodeled kitchen with white cabinets and stainless appliances" loading="eager" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap trust-strip reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;svg class="ic" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/&gt;&lt;/svg&gt; Licensed &amp;amp; Insured&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;svg class="ic" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm6 9v-1a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v1"/&gt;&lt;/svg&gt; Family Owned&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;svg class="ic" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M4 20h16M6 20V8l6-4 6 4v12M9 20v-5h6v5"/&gt;&lt;/svg&gt; Sherwin-Williams Pro&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;svg class="ic" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="m5 12 5 5L20 7"/&gt;&lt;/svg&gt; Free Estimates&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ OUR WORK / PROJECTS ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section" id="gallery"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-tan reveal"&gt;Our Work&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;Real projects. &lt;span class="g"&gt;Real transformations.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Project cards are generated from the GALLERY list in script.js --&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="projects reveal" id="projects"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Interactive before/after slider --&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="ba-feature reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="ba-slider" id="baSlider"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img class="ba-after" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-after.jpg" alt="Bathroom after remodel" loading="lazy" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="ba-before-wrap"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;img class="ba-before" src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/bath-before.jpg" alt="Bathroom before remodel" loading="lazy" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="ba-label ba-label-before"&gt;Before&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="ba-label ba-label-after"&gt;After&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M9 7 4 12l5 5M15 7l5 5-5 5"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="ba-caption"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Tub-to-shower remodel&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;A gutted, water-damaged tub surround rebuilt into a clean tiled shower with new glass doors — start to finish by one Aguila crew. &lt;strong&gt;Drag the handle&lt;/strong&gt; to see the difference.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ SERVICES ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section section-alt" id="services"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-tan reveal"&gt;What We Do&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;One crew for the &lt;span class="g"&gt;whole project.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="section-lead reveal"&gt;From a single room to a full remodel, Aguila handles it start to finish — no juggling three different contractors, no finger-pointing when something goes wrong. Here's where homeowners call us most.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="services-grid reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M3 9h18M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 9v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9M8 6h0M8 13v4"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Kitchen Remodeling&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;The room buyers judge first and you live in every day. We handle cabinets, counters, tile, and paint as one job — so the finishes actually match and the timeline stays tight.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;Most-requested remodel&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M4 12V6a2 2 0 0 1 2-2 2 2 0 0 1 2 2M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM6 19l-1 2M18 19l1 2"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Bathroom Remodeling&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Tub-to-shower conversions, new tile, vanities, and fixtures. Small space, zero margin for sloppy work — which is exactly why you want the right crew in there.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;Done in days, not weeks&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M3 21V10l9-7 9 7v11M3 21h18M9 21v-6h6v6"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Basement Finishing&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;That unused square footage downstairs is the cheapest room you'll ever add. Framing, drywall, flooring, lighting — we turn cold concrete into a real living space.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;Add usable square footage&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M4 4h16v16H4zM4 10h16M10 4v6M14 10v10"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Drywall &amp;amp; Framing&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Cracks, holes, water damage, or a wall that needs to move. We patch seamlessly and frame straight — the kind of work you only notice when it's done wrong.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;Seamless, invisible fixes&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M4 7h12V4H4zM16 5h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-7v3M10 14h2v6h-2z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Interior Painting&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Clean lines, full coverage, and prep that actually lasts. We move and protect your furniture, cut sharp edges by hand, and clean up like we were never there.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;We know paint&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="service"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-ic"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M3 3h18v18H3zM3 9h18M9 3v18M9 15h6"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Flooring, Tile &amp;amp; Trim&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Vinyl plank, tile, baseboards, doors, and trim carpentry. The detail work that makes a room feel finished instead of almost-done — mitered corners, clean reveals, no gaps.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="svc-tag"&gt;The finishing details&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="services-note reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;Not seeing your project? Just ask.&lt;/strong&gt; We also handle demolition, door &amp;amp; fixture installation, garage epoxy, and coordinate licensed plumbing &amp;amp; electrical through our trusted trade partners — so your whole job runs through one point of contact.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="btn btn-dark js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener"&gt;Get a Free Quote &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ ABOUT ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section" id="about"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap about-grid"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="about-copy reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span class="pill pill-tan"&gt;Who We Are&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Built on craftsmanship,&lt;br&gt;&lt;span class="g"&gt;backed by experience.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Aguila Construction is owned and run by &lt;strong&gt;John Paul Aguila&lt;/strong&gt;, born and raised right here in the Elgin area. He started Aguila for one reason: to help local homeowners turn the house they have into the one they actually want.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;While Aguila is a young company, the people swinging the hammers aren't. John Paul's crew is made up of &lt;strong&gt;licensed trade professionals with 25+ years of hands-on experience&lt;/strong&gt; — so whether it's framing, tile, drywall, or finish work, the right expert is on your job, doing it cleanly and doing it right.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;No revolving door of subcontractors. No cut corners. Just high-quality work, done fast and done honestly.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="about-stats"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;25+&lt;/span&gt;&lt;span class="lbl"&gt;Years of trade experience&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;Licensed&lt;/span&gt;&lt;span class="lbl"&gt;Professionals on every job&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat"&gt;&lt;span class="num"&gt;Elgin&lt;/span&gt;&lt;span class="lbl"&gt;Local &amp;amp; family operated&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;aside class="quote-card reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M7 7H4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1zm10 0h-3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2v1a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V8a1 1 0 0 0-1-1z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="quote-text"&gt;I started Aguila because every family deserves to love where they live. We show up, we work clean, and we treat your home like it's our own.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="quote-author"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="avatar"&gt;JP&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span&gt;&lt;strong&gt;John Paul Aguila&lt;/strong&gt;&lt;br&gt;Owner, Aguila Construction&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/aside&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ PROCESS ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section section-alt" id="process"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-tan reveal"&gt;How It Works&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;From first call to &lt;span class="g"&gt;finished job.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="section-lead center-lead reveal"&gt;No chasing, no waiting around for weeks. Here's exactly what happens after you reach out.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="steps reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-num"&gt;1&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Reach Out&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Fill out the quick quote form or call us. Tell us a little about the project you have in mind.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-tag"&gt;Takes 60 seconds&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-num"&gt;2&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;We Call You Back&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Expect a text or call within the hour. We'll talk through your project, scope, and goals in detail.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-tag"&gt;Within 1 hour&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-num"&gt;3&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Free Estimate&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;We schedule your free, written estimate — no obligation, no surprise fees later.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-tag"&gt;Within 24 hours&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="step"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-num"&gt;4&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;We Get to Work&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Our crew shows up on time and gets it done professionally. You don't even need to be home.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="step-tag"&gt;Clean &amp;amp; on schedule&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ WHY AGUILA (DARK) ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section section-dark" id="why"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-dark reveal"&gt;Why Aguila&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;Homeowners &lt;span class="g"&gt;trust us&lt;/span&gt; for a reason.&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="why-grid reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="why"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="why-ic"&gt;&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M19 5 12 12M14 4l6 6-2 2-6-6zM10 14l-6 6M4 20l3-1 1-3"/&gt;&lt;/svg&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Clean Crew&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;We treat your home like our own — no mess left behind.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="why"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="why-ic"&gt;&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M6 2h9l3 3v17l-2-1-2 1-2-1-2 1-2-1-2 1V2zM9 7h6M9 11h6M9 15h4"/&gt;&lt;/svg&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Upfront Pricing&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;No surprises. A detailed written estimate, every time.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="why"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="why-ic"&gt;&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M13 2 4 14h6l-1 8 9-12h-6z"/&gt;&lt;/svg&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Fast Turnaround&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Most interior jobs done in 1–3 days.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="why"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="why-ic"&gt;&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/&gt;&lt;/svg&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Fully Insured&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;$1M liability coverage for total peace of mind.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ REVIEWS ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section" id="reviews"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-tan reveal"&gt;&lt;span class="stars-mini"&gt;★&lt;/span&gt; 5-Star Reviews&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;Don't take &lt;span class="g"&gt;our word for it.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="reviews-grid reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="review"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stars"&gt;★★★★★&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;John and crew are hardworking and diligent. John is true to his word — the project started on time and the crew showed up every day, finishing quicker than I expected. The quote was spot on, no additional charges. I'm thrilled with my new finished basement. Highly recommend Aguila!&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="review-author"&gt;&lt;span class="avatar"&gt;NP&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Net Piper&lt;/strong&gt;&lt;br&gt;&lt;span class="src"&gt;★ Google Review&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="review"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stars"&gt;★★★★★&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Aguila did an excellent job for us. John was professional, honest, and easy to work with from start to finish. Solid workmanship, clear communication, and the project stayed organized throughout. It's hard to find contractors who are dependable and take pride in the work — this team did. Would definitely hire again.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="review-author"&gt;&lt;span class="avatar"&gt;BJ&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Ben Johnson&lt;/strong&gt;&lt;br&gt;&lt;span class="src"&gt;★ Google Review&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;article class="review"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stars"&gt;★★★★★&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;John and crew did a fantastic job communicating with us on the scope of work — trustworthy and reliable. The work looks great, and we'd hire again for sure!&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="review-author"&gt;&lt;span class="avatar"&gt;JM&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Jen Murphy&lt;/strong&gt;&lt;br&gt;&lt;span class="src"&gt;★ Google Review&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/article&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ FAQ ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="section section-alt" id="faq"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap narrow center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span class="pill pill-tan reveal"&gt;Good to Know&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="reveal"&gt;Questions, &lt;span class="g"&gt;answered.&lt;/span&gt;&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap narrow faq reveal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;What areas do you serve?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;We're based in Elgin, IL and work throughout Chicagoland — the city of Chicago and the surrounding suburbs. Not sure if you're in our range? Just give us a call and we'll let you know.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;Are estimates really free?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;Yes — 100% free, with no obligation. We'll visit your home, talk through your project, and send a detailed written estimate. No pressure and no surprise fees later.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;How much do projects cost?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Every project is priced individually after we see the space, but here are honest ballpark ranges to help set expectations:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;ul class="price-list"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Kitchen Remodeling&lt;/span&gt;&lt;span class="price-val"&gt;$15,000–$75,000+&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;Small refreshes on the low end; full gut remodels with layout changes push past $75k.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Bathroom Remodeling&lt;/span&gt;&lt;span class="price-val"&gt;$12,000–$45,000+&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;A basic same-layout remodel starts around $12k. Tile showers, custom glass, and plumbing moves run $20k–$45k+.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Basement Finishing&lt;/span&gt;&lt;span class="price-val"&gt;$35,000–$150,000+&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;An open basic finish starts around $35k. Add a bathroom, wet bar, or bedroom buildout and you're in the $95k–$160k+ range.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Drywall &amp;amp; Framing&lt;/span&gt;&lt;span class="price-val"&gt;$500 / $4,500+&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;Patch repairs start at $500. Full room framing, hang &amp;amp; finish starts at $4,500.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Interior Painting&lt;/span&gt;&lt;span class="price-val"&gt;$650/room · $3–$7.50/sq ft&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;Single-room minimum is $650. Whole-interior projects run $3–$7.50/sq ft depending on ceilings, trim, and prep.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Flooring&lt;/span&gt;&lt;span class="price-val"&gt;$1,500+ · $8–$15/sq ft&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;LVP/laminate with materials and install. Subfloor issues, stairs, and transitions add cost.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Tile Installation&lt;/span&gt;&lt;span class="price-val"&gt;$1,500 backsplash · $14–$30/sq ft · $10,000+ showers&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;Full tile showers — done with proper waterproofing — are the bigger investment.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="price-head"&gt;&lt;span class="price-name"&gt;Trim &amp;amp; Doors&lt;/span&gt;&lt;span class="price-val"&gt;$1,500+ · $9–$16/linear ft&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="price-note"&gt;Priced with material. Best bundled with other work rather than a small standalone run.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p class="price-foot"&gt;Final pricing depends on measurements, existing conditions, and material selections for each job. Your written estimate is fully itemized — these ranges just help set expectations up front.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;Do you offer a warranty or guarantee?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;Yes — both. Every job comes with a workmanship warranty (6 months standard; the term varies by job and can be custom-tailored to your project), plus a 100% customer-satisfaction guarantee. We're also licensed and insured with $1M in liability coverage, so if something isn't right, we make it right.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;How soon can you start?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;We're usually booked about two weeks out. Smaller jobs — like drywall patching, painting a room, or small plumbing work — can typically get started within two weeks. Larger remodels are scheduled a bit further ahead, so reach out early to claim your spot on the calendar.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;Do I need to be home during the work?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;No. Many of our clients give us access and go about their day. Our crews are licensed, insured, and respectful of your home — we protect your space, keep it clean, and lock up when we leave.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;details class="faq-item"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;summary&gt;What payment methods do you accept?&lt;span class="faq-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/summary&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="faq-body"&gt;&lt;p&gt;We accept cash, cashier's check, Zelle, and credit card. For larger remodels, we'll set up a simple milestone payment schedule so it's clear and predictable.&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/details&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="faq-foot"&gt;Still have a question? &lt;a href="tel:+12244973566"&gt;Give us a call &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ FINAL CTA + CONTACT ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;section class="cta-band" id="quote"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="cta-inner"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Let's build something amazing.&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Get your fast, free written estimate today — no pressure, no obligation.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="btn btn-dark btn-lg js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener"&gt;Get Your Free Quote &lt;span class="arr"&gt;→&lt;/span&gt;&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- ============ FOOTER ============ --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;footer class="site-footer"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap footer-grid"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-brand"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo.png" alt="Aguila Construction" width="180" height="38" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p class="footer-tag-sm"&gt;Aguila&lt;span class="g"&gt;.&lt;/span&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="footer-motto"&gt;Building the future,&lt;br&gt;one project at a time.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap footer-cols"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-col"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h4&gt;Contact&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="tel:+12244973566"&gt;224-497-3566&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;Elgin, IL 60120&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-col"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h4&gt;Services&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#services"&gt;Painting&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#services"&gt;Kitchens&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#services"&gt;Bathrooms&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer-col"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;h4&gt;Company&lt;/h4&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#about"&gt;About Us&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#reviews"&gt;Reviews&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="#faq"&gt;FAQ&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="js-quote" href="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec" target="_blank" rel="noopener"&gt;Free Quote&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="wrap footer-legal"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;span&gt;© &lt;span id="year"&gt;2025&lt;/span&gt; Aguila Construction L.L.C. All rights reserved.&lt;/span&gt;&lt;span class="footer-legal-links"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="/privacy-policy" style="color:inherit;margin:0 8px;"&gt;Privacy Policy&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>|</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="/terms-of-service" style="color:inherit;margin:0 8px;"&gt;Terms of Service&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- Lightbox --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="lightbox" id="lightbox" hidden&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="lb-close" id="lbClose" aria-label="Close gallery"&gt;×&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous"&gt;‹&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;figure class="lb-stage"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="lbStage"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;figcaption id="lbCap"&gt;&lt;/figcaption&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/figure&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="lb-nav lb-next" id="lbNext" aria-label="Next"&gt;›&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;!-- Free Quote popup (GoHighLevel / LeadConnector form) --&gt;</span></p>
+<p class="p2"><span class="s1">&lt;div class="quote-modal" id="quoteModal" hidden&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;button class="qm-close" id="qmClose" aria-label="Close form"&gt;×&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="qm-dialog" role="dialog" aria-modal="true" aria-label="Request a free quote"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="qm-head"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;img src="https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/logo-light.png" alt="Aguila Construction" /&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>&lt;p&gt;Request your &lt;span class="g"&gt;free quote&lt;/span&gt;&lt;small&gt;Fast, written estimate — no pressure, no obligation.&lt;/small&gt;&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;iframe</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>src="https://api.leadconnectorhq.com/widget/form/dO854gO373nh0asaKRec"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>id="inline-dO854gO373nh0asaKRec"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>data-layout="{'id':'INLINE'}"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>data-form-id="dO854gO373nh0asaKRec"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>data-form-name="Free Quote Form"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>title="Free Quote Form"</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>style="display:block;width:100%;min-height:560px;border:none;border-radius:14px;background:#fff"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/iframe&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1">&lt;script src="https://link.msgsndr.com/js/form_embed.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;script&gt;</span></p>
+<p class="p2"><span class="s1">/* ============================================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">   </span>Aguila Construction — site interactivity</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">   </span>============================================================ */</span></p>
+<p class="p2"><span class="s1">(function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>"use strict";</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var $ = function (s, c) { return (c || document).querySelector(s); };</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- sticky header shadow ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var header = $(".site-header");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var onScroll = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>header.classList.toggle("scrolled", window.scrollY &gt; 8);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>onScroll();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>window.addEventListener("scroll", onScroll, { passive: true });</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- mobile nav ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var burger = $("#hamburger");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var nav = $("#nav");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>burger.addEventListener("click", function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var open = nav.classList.toggle("open");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>burger.setAttribute("aria-expanded", open ? "true" : "false");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>$$("#nav a").forEach(function (a) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>a.addEventListener("click", function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>nav.classList.remove("open");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>burger.setAttribute("aria-expanded", "false");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- FAQ: single-open accordion ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var faqItems = $$(".faq-item");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>faqItems.forEach(function (item) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>item.addEventListener("toggle", function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>if (item.open) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>faqItems.forEach(function (other) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">          </span>if (other !== item) other.open = false;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- reveal on scroll ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>if ("IntersectionObserver" in window) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var io = new IntersectionObserver(function (entries) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>entries.forEach(function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>$$(".reveal").forEach(function (el) { io.observe(el); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>} else {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>$$(".reveal").forEach(function (el) { el.classList.add("in"); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ============================================================</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>JOBS GALLERY<span class="Apple-converted-space">  </span>—<span class="Apple-converted-space">  </span>EDIT THIS LIST TO ADD WORK</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>------------------------------------------------------------</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>IMG_BASE = where the photos live (just the folder).</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>Each category has: label, blurb, cover (the card photo), photos[].</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>A photo is one of:</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "file.jpg", cap: "Caption" }<span class="Apple-converted-space">                          </span>// single photo</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ before: "x-before.jpg", after: "x-after.jpg", cap: "..." } // before/after slider</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>To add a job: upload the photo(s), then add a line to the right</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>category's photos[]. To add a whole new category, copy a block.</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">     </span>============================================================ */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var IMG_BASE = "https://cdn.jsdelivr.net/gh/jefedany/website-building-@main/images/";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var imgURL = function (file) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>return /^(https?:|data:|\/)/.test(file) ? file : IMG_BASE + file;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var GALLERY = [</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>id: "bathrooms",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>label: "Bathrooms",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>blurb: "Tub-to-shower conversions, fresh tile, vanities, and full bath remodels — done right.",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>cover: "bath-after.jpg",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>photos: [</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ before: "bath-before.jpg", after: "bath-after.jpg", cap: "Tub-to-shower remodel — Elgin, IL" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "bathroom-after.jpg", cap: "Tiled walk-in shower with new glass doors" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile floor" }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>id: "basements",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>label: "Basements",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>blurb: "Cold concrete turned into a warm, finished living space your family will actually use.",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>cover: "basement-after.jpg",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>photos: [</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "basement-after.jpg", cap: "Finished basement — bright, warm living space" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "basement-before-4.jpg", cap: "Before — bare drywall &amp; concrete" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "basement-before-1.jpg", cap: "Framing &amp; rough-in stage" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "basement-before-2.jpg", cap: "Fresh framing and drywall" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "basement-before-3.jpg", cap: "Basement stairs — mid-renovation" }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>id: "kitchens",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>label: "Kitchens",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>blurb: "The heart of the home — cabinets, counters, paint, and tile, all handled by one crew.",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>cover: "kitchen-after-1.jpg",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>photos: [</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "kitchen-after-1.jpg", cap: "Freshly finished white cabinets" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "kitchen-after-2.jpg", cap: "Cabinets, counters &amp; new appliances" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ before: "kitchen-before.jpg", after: "kitchen-after-2.jpg", cap: "Kitchen refresh — Elgin, IL" }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>},</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>id: "finishes",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>label: "Painting, Flooring &amp; Tile",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>blurb: "Interior painting, flooring, tile, trim, and drywall — the finish work that makes a whole project feel done.",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>cover: "bath-floor-after.jpg",</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>photos: [</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile flooring — Elgin, IL" },</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>{ src: "plumbing.jpg", cap: "Rough-in plumbing, coordinated through our licensed trade partners" }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>/* Add painting / flooring / trim / drywall photos here as you collect them:</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">           </span>{ before: "paint-job1-before.jpg", after: "paint-job1-after.jpg", cap: "Living room repaint — Elgin" }, */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>]</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>];</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- reusable before/after slider ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var makeBASlider = function (root) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var wrap = $(".ba-before-wrap", root);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var beforeImg = $(".ba-before", root);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var handle = $(".ba-handle", root);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (!wrap || !beforeImg || !handle) return;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var pct = 50;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var sizeBefore = function () { beforeImg.style.width = root.clientWidth + "px"; };</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var setPct = function (p) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>pct = Math.max(0, Math.min(100, p));</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>wrap.style.width = pct + "%";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>handle.style.left = pct + "%";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>handle.setAttribute("aria-valuenow", Math.round(pct));</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>sizeBefore();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>setPct(50);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>window.addEventListener("resize", sizeBefore);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var fromEvent = function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>var rect = root.getBoundingClientRect();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>var x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>setPct((x / rect.width) * 100);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var dragging = false;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>root.addEventListener("pointerdown", function (e) { dragging = true; fromEvent(e); e.preventDefault(); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>window.addEventListener("pointermove", function (e) { if (dragging) fromEvent(e); }, { passive: true });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>window.addEventListener("pointerup", function () { dragging = false; });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>handle.addEventListener("keydown", function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>if (e.key === "ArrowLeft") { setPct(pct - 4); e.preventDefault(); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>if (e.key === "ArrowRight") { setPct(pct + 4); e.preventDefault(); }</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>// featured slider already in the page markup</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var pageBA = $("#baSlider");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>if (pageBA) makeBASlider(pageBA);</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var baMarkup = function (beforeSrc, afterSrc) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>return '&lt;div class="ba-slider lb-ba"&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;img class="ba-after" src="' + afterSrc + '" alt="After"&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;div class="ba-before-wrap"&gt;&lt;img class="ba-before" src="' + beforeSrc + '" alt="Before"&gt;&lt;/div&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;span class="ba-label ba-label-before"&gt;Before&lt;/span&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;span class="ba-label ba-label-after"&gt;After&lt;/span&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;div class="ba-handle" role="slider" aria-label="Drag to compare before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>'&lt;svg viewBox="0 0 24 24" aria-hidden="true"&gt;&lt;path d="M9 7 4 12l5 5M15 7l5 5-5 5"/&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/div&gt;';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- lightbox ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var lb = $("#lightbox");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var lbStage = $("#lbStage");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var lbCap = $("#lbCap");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var photos = [];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var idx = 0;</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var renderLb = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var p = photos[idx];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (p.before &amp;&amp; p.after) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>lbStage.innerHTML = baMarkup(imgURL(p.before), imgURL(p.after));</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>makeBASlider($(".lb-ba", lbStage));</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>} else {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>lbStage.innerHTML = '&lt;img id="lbImg" src="' + imgURL(p.src) + '" alt="' + (p.cap || "") + '"&gt;';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>lbCap.textContent = p.cap || "";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var openLb = function (catIndex) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var cat = GALLERY[catIndex];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>photos = cat ? cat.photos : [];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (!photos.length) return;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>idx = 0;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>lb.hidden = false;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>document.body.style.overflow = "hidden";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>renderLb();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var closeLb = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>lb.hidden = true;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>document.body.style.overflow = "";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>lbStage.innerHTML = "";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var step = function (d) { idx = (idx + d + photos.length) % photos.length; renderLb(); };</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>$("#lbClose").addEventListener("click", function (e) { e.stopPropagation(); closeLb(); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>$("#lbPrev").addEventListener("click", function (e) { e.stopPropagation(); step(-1); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>$("#lbNext").addEventListener("click", function (e) { e.stopPropagation(); step(1); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>window.addEventListener("keydown", function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (lb.hidden) return;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (e.key === "Escape") closeLb();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (e.key === "ArrowLeft") step(-1);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>if (e.key === "ArrowRight") step(1);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- build project cards from GALLERY ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var projectsEl = $("#projects");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>if (projectsEl) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>GALLERY.forEach(function (cat, i) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>var card = document.createElement("article");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>card.className = "project-card";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>card.style.cursor = "pointer";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>card.innerHTML =</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>'&lt;div class="project-img"&gt;&lt;img src="' + imgURL(cat.cover) + '" alt="' + cat.label + ' remodel by Aguila Construction" loading="lazy"&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>'&lt;span class="tag-pill"&gt;' + cat.photos.length + ' photos&lt;/span&gt;&lt;/div&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>'&lt;div class="project-body"&gt;&lt;h3&gt;' + cat.label + '&lt;/h3&gt;&lt;p&gt;' + cat.blurb + '&lt;/p&gt;' +</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>'&lt;button class="link-arrow" type="button"&gt;View Gallery &lt;span class="arr"&gt;&amp;rarr;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>card.addEventListener("click", function () { openLb(i); });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>projectsEl.appendChild(card);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- free quote modal (GoHighLevel form) ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var quoteModal = $("#quoteModal");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>if (quoteModal) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var openQuote = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>quoteModal.hidden = false;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>document.body.style.overflow = "hidden";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>var closeQuote = function () {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>quoteModal.hidden = true;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>document.body.style.overflow = "";</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>$$(".js-quote").forEach(function (btn) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>btn.addEventListener("click", function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>e.preventDefault();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>openQuote();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>$("#qmClose").addEventListener("click", closeQuote);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>quoteModal.addEventListener("click", function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>if (e.target === quoteModal) closeQuote();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>window.addEventListener("keydown", function (e) {</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span>if (!quoteModal.hidden &amp;&amp; e.key === "Escape") closeQuote();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>/* ---------- footer year ---------- */</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>var yr = $("#year");</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span>if (yr) yr.textContent = new Date().getFullYear();</span></p>
+<p class="p2"><span class="s1">})();</span></p>
+<p class="p1"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">&lt;/script&gt;</span></p>
+</body>
+</html>
