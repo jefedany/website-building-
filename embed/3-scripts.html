@@ -1,7 +1,6 @@
-<!-- Paste in your builder's Footer / Custom JS area -->
 <script>
 /* ============================================================
-   Aguila Construction — site interactivity
+   Aguila Construction \u2014 site interactivity
    ============================================================ */
 (function () {
   "use strict";
@@ -31,15 +30,20 @@
     });
   });
 
-  /* ---------- FAQ: single-open accordion ---------- */
-  var faqItems = $$(".faq-item");
-  faqItems.forEach(function (item) {
-    item.addEventListener("toggle", function () {
-      if (item.open) {
-        faqItems.forEach(function (other) {
-          if (other !== item) other.open = false;
-        });
-      }
+  /* ---------- FAQ: single-open accordion (button + aria) ---------- */
+  var faqTriggers = $$(".faq-trigger");
+  var setFaq = function (btn, open) {
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    var panel = document.getElementById(btn.getAttribute("aria-controls"));
+    if (panel) panel.hidden = !open;
+    var item = btn.closest(".faq-item");
+    if (item) item.classList.toggle("open", open);
+  };
+  faqTriggers.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var isOpen = btn.getAttribute("aria-expanded") === "true";
+      faqTriggers.forEach(function (other) { setFaq(other, false); });
+      if (!isOpen) setFaq(btn, true);
     });
   });
 
@@ -56,7 +60,7 @@
   }
 
   /* ============================================================
-     JOBS GALLERY  —  EDIT THIS LIST TO ADD WORK
+     JOBS GALLERY  \u2014  EDIT THIS LIST TO ADD WORK
      ------------------------------------------------------------
      IMG_BASE = where the photos live (just the folder).
      Each category has: label, blurb, cover (the card photo), photos[].
@@ -75,10 +79,10 @@
     {
       id: "bathrooms",
       label: "Bathrooms",
-      blurb: "Tub-to-shower conversions, fresh tile, vanities, and full bath remodels — done right.",
+      blurb: "Tub-to-shower conversions, fresh tile, vanities, and full bath remodels \u2014 done right.",
       cover: "bath-after.jpg",
       photos: [
-        { before: "bath-before.jpg", after: "bath-after.jpg", cap: "Tub-to-shower remodel — Elgin, IL" },
+        { before: "bath-before.jpg", after: "bath-after.jpg", cap: "Tub-to-shower remodel \u2014 Elgin, IL" },
         { src: "bathroom-after.jpg", cap: "Tiled walk-in shower with new glass doors" },
         { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile floor" }
       ]
@@ -89,34 +93,34 @@
       blurb: "Cold concrete turned into a warm, finished living space your family will actually use.",
       cover: "basement-after.jpg",
       photos: [
-        { src: "basement-after.jpg", cap: "Finished basement — bright, warm living space" },
-        { src: "basement-before-4.jpg", cap: "Before — bare drywall & concrete" },
+        { src: "basement-after.jpg", cap: "Finished basement \u2014 bright, warm living space" },
+        { src: "basement-before-4.jpg", cap: "Before \u2014 bare drywall & concrete" },
         { src: "basement-before-1.jpg", cap: "Framing & rough-in stage" },
         { src: "basement-before-2.jpg", cap: "Fresh framing and drywall" },
-        { src: "basement-before-3.jpg", cap: "Basement stairs — mid-renovation" }
+        { src: "basement-before-3.jpg", cap: "Basement stairs \u2014 mid-renovation" }
       ]
     },
     {
       id: "kitchens",
       label: "Kitchens",
-      blurb: "The heart of the home — cabinets, counters, paint, and tile, all handled by one crew.",
+      blurb: "The heart of the home \u2014 cabinets, counters, paint, and tile, all handled by one crew.",
       cover: "kitchen-after-1.jpg",
       photos: [
         { src: "kitchen-after-1.jpg", cap: "Freshly finished white cabinets" },
         { src: "kitchen-after-2.jpg", cap: "Cabinets, counters & new appliances" },
-        { before: "kitchen-before.jpg", after: "kitchen-after-2.jpg", cap: "Kitchen refresh — Elgin, IL" }
+        { before: "kitchen-before.jpg", after: "kitchen-after-2.jpg", cap: "Kitchen refresh \u2014 Elgin, IL" }
       ]
     },
     {
       id: "finishes",
       label: "Painting, Flooring & Tile",
-      blurb: "Interior painting, flooring, tile, trim, and drywall — the finish work that makes a whole project feel done.",
+      blurb: "Interior painting, flooring, tile, trim, and drywall \u2014 the finish work that makes a whole project feel done.",
       cover: "bath-floor-after.jpg",
       photos: [
-        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile flooring — Elgin, IL" },
+        { before: "bath-floor-before.jpg", after: "bath-floor-after.jpg", cap: "New hex marble tile flooring \u2014 Elgin, IL" },
         { src: "plumbing.jpg", cap: "Rough-in plumbing, coordinated through our licensed trade partners" }
         /* Add painting / flooring / trim / drywall photos here as you collect them:
-           { before: "paint-job1-before.jpg", after: "paint-job1-after.jpg", cap: "Living room repaint — Elgin" }, */
+           { before: "paint-job1-before.jpg", after: "paint-job1-after.jpg", cap: "Living room repaint \u2014 Elgin" }, */
       ]
     }
   ];
@@ -231,13 +235,30 @@
   /* ---------- free quote modal (GoHighLevel form) ---------- */
   var quoteModal = $("#quoteModal");
   if (quoteModal) {
+    var qmCloseBtn = $("#qmClose");
+    var lastTrigger = null;
+
+    /* Keep focus inside the dialog while it's open. The form is a
+       cross-origin iframe, so we can't read its fields \u2014 instead we
+       catch any focus that escapes the modal and pull it back in. */
+    var trapFocus = function (e) {
+      if (!quoteModal.hidden && !quoteModal.contains(e.target)) {
+        if (qmCloseBtn) qmCloseBtn.focus();
+      }
+    };
     var openQuote = function () {
+      lastTrigger = document.activeElement;
       quoteModal.hidden = false;
       document.body.style.overflow = "hidden";
+      document.addEventListener("focusin", trapFocus);
+      if (qmCloseBtn) qmCloseBtn.focus();
     };
     var closeQuote = function () {
       quoteModal.hidden = true;
       document.body.style.overflow = "";
+      document.removeEventListener("focusin", trapFocus);
+      if (lastTrigger && typeof lastTrigger.focus === "function") lastTrigger.focus();
+      lastTrigger = null;
     };
     $$(".js-quote").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
@@ -245,7 +266,7 @@
         openQuote();
       });
     });
-    $("#qmClose").addEventListener("click", closeQuote);
+    if (qmCloseBtn) qmCloseBtn.addEventListener("click", closeQuote);
     quoteModal.addEventListener("click", function (e) {
       if (e.target === quoteModal) closeQuote();
     });
@@ -258,5 +279,4 @@
   var yr = $("#year");
   if (yr) yr.textContent = new Date().getFullYear();
 })();
-
 </script>

@@ -36,6 +36,8 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to main content</a>
+
 <!-- ============ HEADER ============ -->
 <header class="site-header" id="top">
   <div class="wrap header-inner">
@@ -62,7 +64,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
 
 <!-- ============ HERO ============ -->
 <section class="hero">
@@ -328,17 +330,17 @@
     <h2 class="reveal">Questions, <span class="g">answered.</span></h2>
   </div>
   <div class="wrap narrow faq reveal">
-    <details class="faq-item">
-      <summary>What areas do you serve?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We're based in Elgin, IL and work throughout Chicagoland — the city of Chicago and the surrounding suburbs. Not sure if you're in our range? Just give us a call and we'll let you know.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>Are estimates really free?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>Yes — 100% free, with no obligation. We'll visit your home, talk through your project, and send a detailed written estimate. No pressure and no surprise fees later.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>How much do projects cost?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body">
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-1">What areas do you serve?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-1" hidden><p>We're based in Elgin, IL and work throughout Chicagoland — the city of Chicago and the surrounding suburbs. Not sure if you're in our range? Just give us a call and we'll let you know.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2">Are estimates really free?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-2" hidden><p>Yes — 100% free, with no obligation. We'll visit your home, talk through your project, and send a detailed written estimate. No pressure and no surprise fees later.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3">How much do projects cost?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-3" hidden>
         <p>Every project is priced individually after we see the space, but here are honest ballpark ranges to help set expectations:</p>
         <ul class="price-list">
           <li>
@@ -376,23 +378,23 @@
         </ul>
         <p class="price-foot">Final pricing depends on measurements, existing conditions, and material selections for each job. Your written estimate is fully itemized — these ranges just help set expectations up front.</p>
       </div>
-    </details>
-    <details class="faq-item">
-      <summary>Do you offer a warranty or guarantee?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>Yes — both. Every job comes with a workmanship warranty (6 months standard; the term varies by job and can be custom-tailored to your project), plus a 100% customer-satisfaction guarantee. We're also licensed and insured with $1M in liability coverage, so if something isn't right, we make it right.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>How soon can you start?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We're usually booked about two weeks out. Smaller jobs — like drywall patching, painting a room, or small plumbing work — can typically get started within two weeks. Larger remodels are scheduled a bit further ahead, so reach out early to claim your spot on the calendar.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>Do I need to be home during the work?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>No. Many of our clients give us access and go about their day. Our crews are licensed, insured, and respectful of your home — we protect your space, keep it clean, and lock up when we leave.</p></div>
-    </details>
-    <details class="faq-item">
-      <summary>What payment methods do you accept?<span class="faq-plus" aria-hidden="true"></span></summary>
-      <div class="faq-body"><p>We accept cash, cashier's check, Zelle, and credit card. For larger remodels, we'll set up a simple milestone payment schedule so it's clear and predictable.</p></div>
-    </details>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4">Do you offer a warranty or guarantee?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-4" hidden><p>Yes — both. Every job comes with a workmanship warranty (6 months standard; the term varies by job and can be custom-tailored to your project), plus a 100% customer-satisfaction guarantee. We're also licensed and insured with $1M in liability coverage, so if something isn't right, we make it right.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5">How soon can you start?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-5" hidden><p>We're usually booked about two weeks out. Smaller jobs — like drywall patching, painting a room, or small plumbing work — can typically get started within two weeks. Larger remodels are scheduled a bit further ahead, so reach out early to claim your spot on the calendar.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-6">Do I need to be home during the work?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-6" hidden><p>No. Many of our clients give us access and go about their day. Our crews are licensed, insured, and respectful of your home — we protect your space, keep it clean, and lock up when we leave.</p></div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-7">What payment methods do you accept?<span class="faq-plus" aria-hidden="true"></span></button>
+      <div class="faq-body" id="faq-panel-7" hidden><p>We accept cash, cashier's check, Zelle, and credit card. For larger remodels, we'll set up a simple milestone payment schedule so it's clear and predictable.</p></div>
+    </div>
     <p class="faq-foot">Still have a question? <a href="tel:+12244973566">Give us a call <span class="arr">→</span></a></p>
   </div>
 </section>
@@ -415,24 +417,24 @@
   <div class="wrap footer-grid">
     <div class="footer-brand">
       <img src="images/logo.png" alt="Aguila Construction" width="180" height="38" />
-      <p class="footer-tag-sm">Aguila<span class="g">.</span></p>
+      <h2 class="footer-tag-sm">Aguila<span class="g">.</span></h2>
     </div>
     <p class="footer-motto">Building the future,<br>one project at a time.</p>
   </div>
   <div class="wrap footer-cols">
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h3>Contact</h3>
       <a href="tel:+12244973566">224-497-3566</a>
       <span>Elgin, IL 60120</span>
     </div>
     <div class="footer-col">
-      <h4>Services</h4>
+      <h3>Services</h3>
       <a href="#services">Painting</a>
       <a href="#services">Kitchens</a>
       <a href="#services">Bathrooms</a>
     </div>
     <div class="footer-col">
-      <h4>Company</h4>
+      <h3>Company</h3>
       <a href="#about">About Us</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
@@ -440,7 +442,11 @@
     </div>
   </div>
   <div class="wrap footer-legal">
-    <span>© <span id="year">2025</span> Aguila Construction L.L.C. All rights reserved.</span>
+    <span>© <span id="year">2025</span> Aguila Construction L.L.C. All rights reserved.</span><span class="footer-legal-links">
+  <a href="https://aguilacontracting.com/privacy-policy">Privacy Policy</a>
+  |
+  <a href="https://aguilacontracting.com/terms-of-service">Terms of Service</a>
+</span>
   </div>
 </footer>
 
@@ -477,5 +483,8 @@
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <script src="script.js"></script>
+
+<!-- ============ AI CHAT WIDGET (GoHighLevel) ============ -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a33508bce10212d7a694b87"></script>
 </body>
 </html>

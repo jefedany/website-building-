@@ -29,15 +29,20 @@
     });
   });
 
-  /* ---------- FAQ: single-open accordion ---------- */
-  var faqItems = $$(".faq-item");
-  faqItems.forEach(function (item) {
-    item.addEventListener("toggle", function () {
-      if (item.open) {
-        faqItems.forEach(function (other) {
-          if (other !== item) other.open = false;
-        });
-      }
+  /* ---------- FAQ: single-open accordion (button + aria) ---------- */
+  var faqTriggers = $$(".faq-trigger");
+  var setFaq = function (btn, open) {
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    var panel = document.getElementById(btn.getAttribute("aria-controls"));
+    if (panel) panel.hidden = !open;
+    var item = btn.closest(".faq-item");
+    if (item) item.classList.toggle("open", open);
+  };
+  faqTriggers.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var isOpen = btn.getAttribute("aria-expanded") === "true";
+      faqTriggers.forEach(function (other) { setFaq(other, false); });
+      if (!isOpen) setFaq(btn, true);
     });
   });
 
@@ -229,13 +234,30 @@
   /* ---------- free quote modal (GoHighLevel form) ---------- */
   var quoteModal = $("#quoteModal");
   if (quoteModal) {
+    var qmCloseBtn = $("#qmClose");
+    var lastTrigger = null;
+
+    /* Keep focus inside the dialog while it's open. The form is a
+       cross-origin iframe, so we can't read its fields — instead we
+       catch any focus that escapes the modal and pull it back in. */
+    var trapFocus = function (e) {
+      if (!quoteModal.hidden && !quoteModal.contains(e.target)) {
+        if (qmCloseBtn) qmCloseBtn.focus();
+      }
+    };
     var openQuote = function () {
+      lastTrigger = document.activeElement;
       quoteModal.hidden = false;
       document.body.style.overflow = "hidden";
+      document.addEventListener("focusin", trapFocus);
+      if (qmCloseBtn) qmCloseBtn.focus();
     };
     var closeQuote = function () {
       quoteModal.hidden = true;
       document.body.style.overflow = "";
+      document.removeEventListener("focusin", trapFocus);
+      if (lastTrigger && typeof lastTrigger.focus === "function") lastTrigger.focus();
+      lastTrigger = null;
     };
     $$(".js-quote").forEach(function (btn) {
       btn.addEventListener("click", function (e) {
@@ -243,7 +265,7 @@
         openQuote();
       });
     });
-    $("#qmClose").addEventListener("click", closeQuote);
+    if (qmCloseBtn) qmCloseBtn.addEventListener("click", closeQuote);
     quoteModal.addEventListener("click", function (e) {
       if (e.target === quoteModal) closeQuote();
     });
